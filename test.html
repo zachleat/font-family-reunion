@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+	#success {
+		font-family: monospace;
+	}
+	.pair {
+		margin: 1em 0;
+		position: relative;
+		min-height: 3em;
+	}
+	.pair > div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	#defaults .pair > div {
+		font-size: 32px;
+		font-weight: normal;
+		opacity: .4;
+	}
+	</style>
+</head>
+<body>
+	<p id="ua"></p>
+	<h2>Error</h2>
+	<div id="error"></div>
+	<h2>Success</h2>
+	<div id="success"></div>
+	<div id="defaults">
+		<h2>Fantasy</h2>
+		<div id="fantasy"></div>
+		<h2>Cursive</h2>
+		<div id="cursive"></div>
+		<h2>Monospace</h2>
+		<div id="monospace"></div>
+		<h2>Sans-serif</h2>
+		<div id="sans-serif"></div>
+		<h2>Serif</h2>
+		<div id="serif"></div>
+	</div>
+
+	<script src="lib/fontfaceonload.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="src/font-family-reunion.js"></script>
+</body>
+</html>
