@@ -17,21 +17,25 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
 	}
 	#defaults .pair > div {
 		font-size: 32px;
 		font-weight: normal;
 		opacity: .4;
 	}
+	#success textarea {
+		width: 96%;
+		height: 10em;
+	}
 	</style>
 </head>
 <body>
+	Limitations: Less reliable with symbol fonts (which can use default glyphs for test string characters).
 	<p id="ua"></p>
 	<h2>Error</h2>
 	<div id="error"></div>
 	<h2>Success</h2>
-	<div id="success"></div>
+	<div id="success"><textarea></textarea></div>
 	<div id="defaults">
 		<h2>Fantasy</h2>
 		<div id="fantasy"></div>

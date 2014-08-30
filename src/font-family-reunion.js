@@ -1,62 +1,85 @@
 ;(function( w, $ ) {
 
-	var DEFAULT_FONT_FAMILIES = [ 'cursive', 'fantasy', 'monospace', 'sans-serif', 'serif' ];
+	var primaryMatch = {
+		cursive: $( "#cursive" ),
+		monospace: $( "#monospace" ),
+		'sans-serif': $( "#sans-serif" ),
+		serif: $( "#serif" ),
+		fantasy: $( "#fantasy" )
+	};
 
-	var FontFamilyReunion = w.FontFamilyReunion = {
+	var FFR = w.FontFamilyReunion = {
 		success: [],
-		error: []
+		error: [],
+		getFontFamily: function( family ) {
+			return 'font-family: ' + family;
+		},
+		getQuotedFontFamily: function( family ) {
+			return 'font-family: \'' + family + '\'';
+		},
+		testDefaultMatch: function( family ) {
+			// TODO use internal option from FontFaceOnload
+			var testString = 'AxmTYklsjo190QW@#% This is a test string',
+				fallbacks = {
+					"sans-serif": "serif",
+					serif: "sans-serif",
+					cursive: "serif",
+					fantasy: "serif",
+					monospace: "sans-serif"
+				},
+				primary,
+				secondary;
+
+			for( primary in fallbacks ) {
+				secondary = fallbacks[ primary ];
+				FontFaceOnload( family, {
+					timeout: 0, // local fonts only
+					tolerance: 0,
+					fallbacks: [ primary, secondary ],
+					primaryMatch: function() {
+						primaryMatch[ primary ].append( '<div class="pair"><div style="' + FFR.getQuotedFontFamily( family ) + '">' + testString + ' ' + family + '</div><div style="' + FFR.getFontFamily( primary ) + '">' + testString + '</div></div>' );
+					}
+				});
+			}
+		}
 	};
 
 	$( "#ua" ).html( navigator.userAgent );
 
 	var $error = $( "#error" ),
 		$success = $( "#success" ),
-		primaryMatch = {
-			cursive: $( "#cursive" ),
-			monospace: $( "#monospace" ),
-			'sans-serif': $( "#sans-serif" ),
-			serif: $( "#serif" ),
-			fantasy: $( "#fantasy" )
-		},
 		deferreds = [];
 
 	$.getJSON( "src/font-families.json" ).done(function( data ) {
 		for( var j = 0, k = data.families.length; j < k; j++ ) {
 			(function( family ) {
-				var deferred = $.Deferred(),
-					fallbacks = [ "sans-serif", "serif", "cursive", "fantasy", "monospace" ],
-					testString = "This is a test string gxympq %#@ ";
+				var deferred = $.Deferred();
 
 				FontFaceOnload( family, {
 					timeout: 0, // local fonts only
 					success: function() {
-						FontFamilyReunion.success.push( family );
+						// $success.append( '<p style="' + FFR.getQuotedFontFamily( family ) + '">' + family + '</p><p>' + family + '</p>' );
+						FFR.success.push( family );
 						deferred.resolve();
 					},
 					error: function() {
-						$error.append( '<p style="font-family: ' + family + '">' + family + '</p><p>' + family + '</p>' );
-						FontFamilyReunion.error.push( family );
+						// $error.append( '<p style="' + FFR.getQuotedFontFamily( family ) + '">' + family + ' </p><p>' + family + '</p>' );
+						FFR.error.push( family );
 						deferred.resolve();
 					}
 				});
-
-				for( var j = 0, k = fallbacks.length; j < k; j++ ) {
-					FontFaceOnload( family, {
-						timeout: 0, // local fonts only
-						tolerance: 0,
-						fallbacks: [ fallbacks[ j ], fallbacks[ ( j + 1 ) % fallbacks.length ] ],
-						primaryMatch: function() {
-							primaryMatch[ fallbacks[ j ] ].append( '<div class="pair"><div style="font-family: ' + family + '">' + family + " " + testString + '</div><div style="font-family: ' + fallbacks[ j ] + '">' + family + " " + testString + '</div></div>' );
-						}
-					});
-				}
 
 				deferreds.push( deferred.promise() );
 			})( data.families[ j ] );
 		}
 
 		$.when.apply( deferreds ).then(function() {
-			$success.append( JSON.stringify( FontFamilyReunion.success ) );
+			$success.find( "textarea" ).val( JSON.stringify( FFR.success ) );
+
+			var success = FFR.success;
+			for( var j = 0, k = success.length; j < k; j++ ) {
+				FFR.testDefaultMatch( success[ j ] );
+			}
 		});
 	});
 
