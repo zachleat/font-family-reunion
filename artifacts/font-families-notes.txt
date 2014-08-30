@@ -1,0 +1,88 @@
+TODO:
+* Windows Vista
+* Android 2.3
+* Android 4.0
+* Windows Phone 7.5
+* Windows Phone 8
+* Blackberry OS 6
+* Blackberry OS 7
+* Blackberry OS 10
+* Test if Firefox for Android has different fonts than Chrome, Browser
+
+* Issues with * Bold (and etc) family names: http://stackoverflow.com/questions/11878088/firefox-not-recognizing-a-font
+
+Notes:
+* Unicode Last Resort "LastResort" shows in Mac Chrome but not Firefox
+* "Webdings","Wingdings","Wingdings 2","Wingdings 3" Don’t show in Mac Chrome but does show in Firefox
+* "fantasy" on Windows is IMPACT. on Mac OS it’s Papyrus
+
+
+{
+	"ua": "",
+	"os": "",
+	"version": "",
+	"notes": "",
+	"defaults": {
+		"monospace": "",
+		"cursive": "",
+		"fantasy": "",
+		"sans-serif": "",
+		"serif": ""
+	},
+	"families": []
+},
+
+// Sources:
+
+// *nix
+> fc-list
+
+// Mac OS X Mavericks
+http://support.apple.com/kb/HT5944
+
+// Mac OS X Snow Leopard
+http://support.apple.com/kb/HT5154
+
+// Windows:
+http://www.microsoft.com/typography/fonts/product.aspx
+
+// Windows 8
+http://www.microsoft.com/typography/fonts/product.aspx?PID=164
+
+// Windows 7
+http://www.microsoft.com/typography/fonts/product.aspx?PID=161
+
+// Windows Vista
+http://www.microsoft.com/typography/fonts/product.aspx?PID=149
+
+// Windows XP
+http://www.microsoft.com/typography/fonts/product.aspx?PID=135
+
+// Windows XP SP2
+http://www.microsoft.com/typography/fonts/product.aspx?PID=145
+
+// iOS 7
+http://support.apple.com/kb/HT5878
+
+// Android
+https://github.com/android/platform_frameworks_base/tree/master/data/fonts
+http://stackoverflow.com/questions/6809944/default-font-set-on-android
+https://developer.android.com/design/style/typography.html
+
+// Windows Phone (not very many good resources here)
+http://msdn.microsoft.com/en-us/library/ff806365%28v=vs.95%29.aspx
+
+// Blackberry
+http://stackoverflow.com/questions/775135/blackberry-font-family
+
+// Opera Mini (uses OS default)
+http://www.opera.com/help/mini/faq#squares
+
+JSON.stringify(Array.prototype.slice.call($0.querySelectorAll( "td:nth-child(2)" ) ).map(function(el) { return el.textContent }));
+
+// http://underscorejs.org/
+JSON.stringify(_.unique(  ).sort());
+
+
+Bookmark Dump:
+Webdings Wingdings https://code.google.com/p/chromium/issues/detail?id=3766
