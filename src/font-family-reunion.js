@@ -76,6 +76,21 @@
 		$.when.apply( deferreds ).then(function() {
 			$success.find( "textarea" ).val( JSON.stringify( FFR.success ) );
 
+			if( confirm( "Save?" ) ) {
+				$.ajax({
+					type: 'POST',
+					url: 'http://192.168.2.27:3000/save',
+					data: {
+						ua: navigator.userAgent,
+						families: FFR.success.join( ',' )
+					},
+					dataType: 'json',
+					success: function() {
+						alert( 'Saved' );
+					}
+				});
+			}
+
 			var success = FFR.success;
 			for( var j = 0, k = success.length; j < k; j++ ) {
 				FFR.testDefaultMatch( success[ j ] );
