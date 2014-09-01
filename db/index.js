@@ -23,7 +23,8 @@ console.log( 'saving', ua, families );
 			var collection = db.collection('fontfamilies');
 			collection.insert({
 				ua: ua,
-				families: families
+				families: families,
+				date: (new Date()).toString()
 			}, function( err ) {
 				if( err ) {
 					throw err;
