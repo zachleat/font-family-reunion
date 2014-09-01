@@ -15,7 +15,7 @@ Notes:
 * Unicode Last Resort "LastResort" shows in Mac Chrome but not Firefox
 * "Webdings","Wingdings","Wingdings 2","Wingdings 3" Don’t show in Mac Chrome but does show in Firefox
 * "fantasy" on Windows is IMPACT. on Mac OS it’s Papyrus
-* Droid Sans (sans-serif) is available on Android 4.4.2 as a font-family name despite that 4.0+ uses variants of Roboto for sans-serif, serif, and monospace. None of the other variants of Droid Sans or Roboto are available for use in font-family.
+* Droid Sans is the only as-is font-family available by name on Android. None of the other variants of Droid Sans or Roboto (used in 4.0+) are available for use in font-family, they are used through aliases.
 	* http://jsbin.com/qudiri/1
 	* Bug with older Android, defaults to sans-serif if it doesn’t recognize a font in the stack: https://code.google.com/p/android/issues/detail?id=11356
 
