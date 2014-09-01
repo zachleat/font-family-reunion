@@ -53,10 +53,15 @@
 	$.getJSON( "src/font-families.json" ).done(function( data ) {
 		for( var j = 0, k = data.families.length; j < k; j++ ) {
 			(function( family ) {
-				var deferred = $.Deferred();
+				var deferred = $.Deferred(),
+					fallbacks = {
+						"sans-serif": [ "serif", "monospace" ],
+						serif: [ "sans-serif", "monospace" ]
+					};
 
 				FontFaceOnload( family, {
 					timeout: 0, // local fonts only
+					fallbacks: fallbacks[ family ] ? fallbacks[ family ] : undefined,
 					success: function() {
 						// $success.append( '<p style="' + FFR.getQuotedFontFamily( family ) + '">' + family + '</p><p>' + family + '</p>' );
 						FFR.success.push( family );
