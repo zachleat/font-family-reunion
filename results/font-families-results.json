@@ -58,7 +58,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36",
-			"os": "Windows XP",
+			"os": "Windows",
 			"version": "XP (NT 5.1 SP3)",
 			"notes": "Modern IE Virtual Machine",
 			"aliases": {
@@ -75,7 +75,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
-			"os": "Windows XP",
+			"os": "Windows",
 			"version": "XP (NT 5.2)",
 			"notes": "Browserstack",
 			"aliases": {
@@ -92,7 +92,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
-			"os": "Windows 7",
+			"os": "Windows",
 			"version": "7 (NT 6.1)",
 			"notes": "Browserstack",
 			"aliases": {
@@ -109,7 +109,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
-			"os": "Windows 8",
+			"os": "Windows",
 			"version": "8 (NT 6.2)",
 			"notes": "Browserstack",
 			"aliases": {
@@ -126,7 +126,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
-			"os": "Windows 8.1",
+			"os": "Windows",
 			"version": "8.1 (NT 6.3)",
 			"notes": "Browserstack",
 			"aliases": {
@@ -143,7 +143,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_3 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B508 Safari/9537.53",
-			"os": "iOS 7",
+			"os": "iOS",
 			"version": "7.0.3",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
@@ -158,7 +158,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B141 Safari/8536.25",
-			"os": "iOS 6.1",
+			"os": "iOS",
 			"version": "6.1",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
@@ -173,7 +173,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A403 Safari/8536.25",
-			"os": "iOS 6",
+			"os": "iOS",
 			"version": "6.0",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
@@ -188,7 +188,7 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36",
-			"os": "Windows Vista",
+			"os": "Windows",
 			"version": "Vista (NT 6.0)",
 			"notes": "Modern.ie Virtual Machine",
 			"aliases": {
