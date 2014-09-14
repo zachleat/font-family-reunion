@@ -1,6 +1,7 @@
 ;(function( w, $ ) {
 
 	var primaryMatch = {
+		ajskldfjklasjdfkljaklsdf: $( "#ajskldfjklasjdfkljaklsdf" ),
 		cursive: $( "#cursive" ),
 		monospace: $( "#monospace" ),
 		'sans-serif': $( "#sans-serif" ),
@@ -21,6 +22,7 @@
 			// TODO use internal option from FontFaceOnload
 			var testString = 'AxmTYklsjo190QW@#% This is a test string',
 				fallbacks = {
+					ajskldfjklasjdfkljaklsdf: "monospace",
 					"sans-serif": "serif",
 					serif: "sans-serif",
 					cursive: "serif",
