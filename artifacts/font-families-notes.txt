@@ -1,26 +1,36 @@
+SERVER:
+	Start mongodb> mongod
+	Start node.js> node db/index.js
+
 TODO:
-* Windows Vista
-* Android 2.3
-* Android 4.0
+* Android 2.3 (something is broken on fontfaceonload here)
 * Windows Phone 7.5
 * Windows Phone 8
 * Blackberry OS 6
 * Blackberry OS 7
 * Blackberry OS 10
-* Test if Firefox for Android has different fonts than Chrome, Browser
+
 
 * Issues with * Bold (and etc) family names: http://stackoverflow.com/questions/11878088/firefox-not-recognizing-a-font
+* Iskoola Pota pretends it’s Times New Roman on Windows 8, 8.1 (higher unicode range font)
 
 Notes:
 * Unicode Last Resort "LastResort" shows in Mac Chrome but not Firefox
 * "Webdings","Wingdings","Wingdings 2","Wingdings 3" Don’t show in Mac Chrome but does show in Firefox
 * "fantasy" on Windows is IMPACT. on Mac OS it’s Papyrus
 * Droid Sans is the only as-is font-family available by name on Android. None of the other variants of Droid Sans or Roboto (used in 4.0+) are available for use in font-family, they are used through aliases.
+	* Android results: *** fonts are not actually available for use in font-family list.
 	* http://jsbin.com/qudiri/1
 	* Bug with older Android, defaults to sans-serif if it doesn’t recognize a font in the stack: https://code.google.com/p/android/issues/detail?id=11356
 
 	* See also test case http://jsfiddle.net/9z3tD/4/
 	* See also test case and background info http://stackoverflow.com/questions/6809944/default-font-set-on-android/16718523#16718523
+
+
+Stack overflow answers:
+* http://stackoverflow.com/questions/3200069/css-fonts-on-android
+* http://stackoverflow.com/questions/6809944/default-font-set-on-android/16718523#16718523
+
 
 {
 	"ua": "",
