@@ -52,7 +52,8 @@
 				"cursive": "Apple Chancery",
 				"fantasy": "Papyrus",
 				"sans-serif": "Helvetica",
-				"serif": "Times"
+				"serif": "Times",
+				"": "Times"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Al Bayan","Al Nile","Al Tarikh","American Typewriter","Andale Mono","Apple Braille","Apple Chancery","Apple LiGothic","Apple LiSung","Apple SD Gothic Neo","Apple Symbols","Apple Color Emoji","AppleGothic","AppleMyungjo","Arial","Arial Black","Arial Hebrew","Arial Narrow","Arial Rounded MT Bold","Arial Unicode MS","Athelas","Avenir","Avenir Next","Avenir Next Condensed","Ayuthaya","Baghdad","Bangla MN","Bangla Sangam MN","Baoli SC","Baskerville","Beirut","BiauKai","Big Caslon","Brush Script MT","Chalkboard","Chalkboard SE","Chalkduster","Charcoal CY","Charter","Cochin","Comic Sans MS","Copperplate","Corsiva Hebrew","Courier","Courier New","DIN Alternate","DIN Condensed","Damascus","DecoType Naskh","Devanagari MT","Devanagari Sangam MN","Didot","Diwan Kufi","Diwan Thuluth","Euphemia UCAS","Farah","Farisi","Futura","GB18030 Bitmap","Geeza Pro","Geneva","Geneva CY","Georgia","Gill Sans","Gujarati MT","Gujarati Sangam MN","GungSeo","Gurmukhi MN","Gurmukhi MT","Gurmukhi Sangam MN","Hannotate SC","Hannotate TC","HanziPen SC","HanziPen TC","HeadLineA","Hei","Heiti SC","Heiti TC","Helvetica","Helvetica CY","Helvetica Neue","Herculanum","Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Std","Hiragino Kaku Gothic StdN","Hiragino Maru Gothic Pro","Hiragino Maru Gothic ProN","Hiragino Mincho Pro","Hiragino Mincho ProN","Hiragino Sans GB","Hoefler Text","Impact","InaiMathi","Iowan Old Style","Kai","Kailasa","Kaiti SC","Kaiti TC","Kannada MN","Kannada Sangam MN","Kefa","Khmer MN","Khmer Sangam MN","Kokonor","Krungthep","KufiStandardGK","Lantinghei SC","Lantinghei TC","Lao MN","Lao Sangam MN","LiHei Pro","LiSong Pro","Libian SC","Lucida Grande","Malayalam MN","Malayalam Sangam MN","Marion","Marker Felt","Menlo","Microsoft Sans Serif","Mishafi","Monaco","Mshtakan","Muna","Myanmar MN","Myanmar Sangam MN","Nadeem","Nanum Brush Script","Nanum Gothic","Nanum Myeongjo","Nanum Pen Script","New Peninim MT","Noteworthy","Optima","Oriya MN","Oriya Sangam MN","Osaka","PCMyungjo","PT Mono","PT Sans","PT Sans Caption","PT Sans Narrow","PT Serif","PT Serif Caption","Palatino","Papyrus","PilGi","Plantagenet Cherokee","Raanana","STFangsong","STHeiti","STIXGeneral","STIXIntegralsD","STIXIntegralsSm","STIXIntegralsUp","STIXIntegralsUpD","STIXIntegralsUpSm","STIXNonUnicode","STIXSizeFiveSym","STIXSizeFourSym","STIXSizeOneSym","STIXSizeThreeSym","STIXSizeTwoSym","STIXVariants","STKaiti","STSong","Sana","Sathu","Savoye LET","Seravek","Silom","Sinhala MN","Sinhala Sangam MN","Skia","Snell Roundhand","Songti SC","Songti TC","Superclarendon","Symbol","Tahoma","Tamil MN","Tamil Sangam MN","Telugu MN","Telugu Sangam MN","Thonburi","Times","Times New Roman","Trebuchet MS","Verdana","Waseem","Wawati SC","Wawati TC","Weibei SC","Weibei TC","Xingkai SC","YuGothic","YuMincho","Yuanti SC","Yuppy SC","Yuppy TC","Zapf Dingbats","Zapfino"]
 		},
@@ -152,7 +153,8 @@
 				"fantasy": "Papyrus",
 				"sans-serif": "Helvetica",
 				"serif": "Times",
-				"Times New Roman": "Times"
+				"times new roman": "Times",
+				"": "Times"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM",".Times LT MM","American Typewriter","Apple Color Emoji","Apple SD Gothic Neo","AppleGothic","Arial","Arial Hebrew","Arial Rounded MT Bold","Arial Unicode MS","Avenir","Avenir Next","Avenir Next Condensed","Bangla Sangam MN","Baskerville","Bodoni Ornaments","Chalkboard SE","Chalkduster","Cochin","Copperplate","Courier","Courier New","DB LCD Temp","Devanagari Sangam MN","Didot","Euphemia UCAS","Futura","Geeza Pro","Georgia","Gill Sans","Gujarati Sangam MN","Gurmukhi MN","Heiti SC","Heiti TC","Helvetica","Helvetica Neue","Hiragino Kaku Gothic ProN","Hiragino Mincho ProN","Hoefler Text","Kailasa","Kannada Sangam MN","LastResort","Malayalam Sangam MN","Marion","Marker Felt","Noteworthy","Optima","Oriya Sangam MN","Palatino","Papyrus","Sinhala Sangam MN","Snell Roundhand","Symbol","Tamil Sangam MN","Telugu Sangam MN","Thonburi","Times","Times New Roman","Trebuchet MS","Verdana","Zapf Dingbats","Zapfino"]
 		},
@@ -167,7 +169,8 @@
 				"fantasy": "Papyrus",
 				"sans-serif": "Helvetica",
 				"serif": "Times",
-				"Times New Roman": "Times"
+				"times new roman": "Times",
+				"": "Times"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM",".Times LT MM","American Typewriter","Apple Color Emoji","Apple SD Gothic Neo","AppleGothic","Arial","Arial Hebrew","Arial Rounded MT Bold","Arial Unicode MS","Avenir","Avenir Next","Avenir Next Condensed","Bangla Sangam MN","Baskerville","Bodoni Ornaments","Chalkboard SE","Chalkduster","Cochin","Copperplate","Courier","Courier New","DB LCD Temp","Devanagari Sangam MN","Didot","Euphemia UCAS","Futura","Geeza Pro","Georgia","Gill Sans","Gujarati Sangam MN","Gurmukhi MN","Heiti SC","Heiti TC","Helvetica","Helvetica Neue","Hiragino Kaku Gothic ProN","Hiragino Mincho ProN","Hoefler Text","Kailasa","Kannada Sangam MN","LastResort","Malayalam Sangam MN","Marion","Marker Felt","Noteworthy","Optima","Oriya Sangam MN","Palatino","Papyrus","Sinhala Sangam MN","Snell Roundhand","Symbol","Tamil Sangam MN","Telugu Sangam MN","Thonburi","Times","Times New Roman","Trebuchet MS","Verdana","Zapf Dingbats","Zapfino"]
 		},
@@ -182,7 +185,8 @@
 				"fantasy": "Papyrus",
 				"sans-serif": "Helvetica",
 				"serif": "Times",
-				"Times New Roman": "Times"
+				"times new roman": "Times",
+				"": "Times"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM",".Times LT MM","American Typewriter","Apple Color Emoji","Apple SD Gothic Neo","AppleGothic","Arial","Arial Hebrew","Arial Rounded MT Bold","Arial Unicode MS","Avenir","Avenir Next","Avenir Next Condensed","Bangla Sangam MN","Baskerville","Bodoni Ornaments","Chalkboard SE","Chalkduster","Cochin","Copperplate","Courier","Courier New","DB LCD Temp","Devanagari Sangam MN","Didot","Euphemia UCAS","Futura","Geeza Pro","Georgia","Gill Sans","Gujarati Sangam MN","Gurmukhi MN","Heiti SC","Heiti TC","Helvetica","Helvetica Neue","Hiragino Kaku Gothic ProN","Hiragino Mincho ProN","Hoefler Text","Kailasa","Kannada Sangam MN","LastResort","Malayalam Sangam MN","Marion","Marker Felt","Noteworthy","Optima","Oriya Sangam MN","Palatino","Papyrus","Sinhala Sangam MN","Snell Roundhand","Symbol","Tamil Sangam MN","Telugu Sangam MN","Thonburi","Times","Times New Roman","Trebuchet MS","Verdana","Zapf Dingbats","Zapfino"]
 		},
