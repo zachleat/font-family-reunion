@@ -4,6 +4,7 @@
 			"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Mac OS X Snow Leopard",
 			"version": "10.6.8",
+			"shortcode": "os-x-snow-leopard",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier",
@@ -19,6 +20,7 @@
 			"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Mac OS X Lion",
 			"version": "10.7.5",
+			"shortcode": "os-x-lion",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier",
@@ -34,6 +36,7 @@
 			"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Mac OS X Mountain Lion",
 			"version": "10.8.4",
+			"shortcode": "os-x-mountain-lion",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier",
@@ -49,6 +52,7 @@
 			"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Mac OS X Mavericks",
 			"version": "10.9.0",
+			"shortcode": "os-x-mavericks",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier",
@@ -64,6 +68,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36",
 			"os": "Windows",
 			"version": "XP (NT 5.1 SP3)",
+			"shortcode": "win-xp-sp3",
 			"notes": "Modern IE Virtual Machine",
 			"aliases": {
 				"monospace": "Courier New",
@@ -82,6 +87,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Windows",
 			"version": "XP (NT 5.2)",
+			"shortcode": "win-xp",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier New",
@@ -100,6 +106,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Windows",
 			"version": "7 (NT 6.1)",
+			"shortcode": "win-7",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier New",
@@ -118,6 +125,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Windows",
 			"version": "8 (NT 6.2)",
+			"shortcode": "win-8",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier New",
@@ -136,6 +144,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36",
 			"os": "Windows",
 			"version": "8.1 (NT 6.3)",
+			"shortcode": "win-8-1",
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier New",
@@ -154,6 +163,7 @@
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D167 Safari/9537.53",
 			"os": "iOS",
 			"version": "7.1",
+			"shortcode": "ios-7-1",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -170,6 +180,7 @@
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_3 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B508 Safari/9537.53",
 			"os": "iOS",
 			"version": "7.0.3",
+			"shortcode": "ios-7",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -186,6 +197,7 @@
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B141 Safari/8536.25",
 			"os": "iOS",
 			"version": "6.1",
+			"shortcode": "ios-6-1",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -202,6 +214,7 @@
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A403 Safari/8536.25",
 			"os": "iOS",
 			"version": "6.0",
+			"shortcode": "ios-6",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -218,6 +231,7 @@
 			"ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36",
 			"os": "Windows",
 			"version": "Vista (NT 6.0)",
+			"shortcode": "win-vista",
 			"notes": "Modern.ie Virtual Machine",
 			"aliases": {
 				"cursive": "Comic Sans MS",
@@ -236,6 +250,7 @@
 			"ua": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T230NU Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36",
 			"os": "Android KitKat",
 			"version": "4.4.2",
+			"shortcode": "android-4-4",
 			"notes": "Samsung Galaxy Tab 4",
 			"aliases": {
 				"monospace": "Droid Sans Mono***",
