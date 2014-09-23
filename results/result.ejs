@@ -1,0 +1,14 @@
+<table id="<%= slug %>">
+	<thead>
+		<th>Operating System</th>
+		<th>Supported Font</th>
+	</thead>
+	<tbody>
+		<% operatingSystems.forEach(function(os){ %>
+			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %>">
+				<td class="<%= os.shortcode %>"><%= os.name %> <%= os.version %></td>
+				<td><%= os.fontFamily %></td>
+			</tr>
+		<% }) %>
+	</tbody>
+</table>
