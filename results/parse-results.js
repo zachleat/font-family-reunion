@@ -10,15 +10,15 @@ results.families.forEach(function( family, osId ) {
 		shortcode: family.shortcode
 	};
 
-	if( family.aliases[ "" ] ) {
+	if( family.aliases.__default ) {
 		if( !lookupTable[ "" ] ) {
 			lookupTable[ "" ] = {};
 		}
 
 		lookupTable[ "" ][ osId ] = {
 			fallback: true,
-			alias: family.aliases[ "" ],
-			fontFamily: familyName
+			alias: family.aliases.__default,
+			fontFamily: ""
 		};
 	}
 
@@ -153,8 +153,3 @@ for( var familyName in lookupTable ) {
 		}
 	});
 }
-
-// var db = new FFRLookup( "Times" );
-
-// console.log( db.toString(), "\n" );
-// console.log( db.toJSON(), "\n" );
