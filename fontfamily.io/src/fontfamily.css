@@ -98,10 +98,16 @@ button {
 	white-space: nowrap;
 	padding-left: .8em;
 }
+.results table thead,
+.results table tbody td:first-child,
 .results table .unsupported {
+	pointer-events: none;
 	visibility: hidden;
 }
+.results table:first-child thead,
+.results table:first-child tbody td:first-child,
 .results table:first-child .unsupported {
+	pointer-events: default;
 	visibility: visible;
 }
 .results table tbody td {
