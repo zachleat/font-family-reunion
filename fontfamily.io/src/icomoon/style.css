@@ -3,8 +3,7 @@
 	src:url('fonts/icomoon.eot?5zsouo');
 	src:url('fonts/icomoon.eot?#iefix5zsouo') format('embedded-opentype'),
 		url('fonts/icomoon.woff?5zsouo') format('woff'),
-		url('fonts/icomoon.ttf?5zsouo') format('truetype'),
-		url('fonts/icomoon.svg?5zsouo#icomoon') format('svg');
+		url('fonts/icomoon.ttf?5zsouo') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,18 +25,33 @@
 .icon-tux:before {
 	content: "\e600";
 }
+.icon-ios-7-1:before,
+.icon-ios-7:before,
+.icon-ios-6-1:before,
+.icon-ios-6:before,
 .icon-apple:before {
 	content: "\e601";
 }
+.icon-os-x-snow-leopard:before,
+.icon-os-x-lion:before,
+.icon-os-x-mountain-lion:before,
+.icon-os-x-mavericks:before,
 .icon-finder:before {
 	content: "\e602";
 }
+.icon-android-4-4:before,
 .icon-android:before {
 	content: "\e603";
 }
+.icon-win-xp-sp3:before,
+.icon-win-xp:before,
+.icon-win-7:before,
+.icon-win-vista:before,
 .icon-windows:before {
 	content: "\e604";
 }
+.icon-win-8:before,
+.icon-win-8-1:before,
 .icon-windows8:before {
 	content: "\e605";
 }

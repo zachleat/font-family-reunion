@@ -3,63 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<style>
-	body {
-		font-family: Helvetica, sans-serif;
-		background-color: #F2E8D5;
-	}
-	.results {
-		position: relative;
-		margin: 0 auto;
-		max-width: 600px;
-	}
-	.results table {
-		width: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-		table-layout: fixed;
-		empty-cells: show;
-	}
-	.results table td,
-	.results table th {
-		padding: .4em .8em;
-		width: 55%;
-		/*white-space: nowrap;*/
-	}
-	.results table td:first-child + td,
-	.results table th:first-child + th {
-		width: 45%;
-	}
-	.results table .unsupported {
-		visibility: hidden;
-	}
-	.results table:first-child .unsupported {
-		visibility: visible;
-	}
-	.results table tbody td:first-child {
-		font-size: .875em;
-	}
-	.results table tbody td:first-child + td {
-		color: #fff;
-	}
-
-	.supported td + td {
-		background-color: #39B54A;
-	}
-	.aliased td + td {
-		background-color: #A8BD04;
-	}
-	.fallback td + td,
-	.unsupported td + td {
-		background-color: #C44230;
-	}
-	</style>
+	<title>fontfamily.io</title>
+	<link rel="stylesheet" href="src/fontfamily.css">
+	<link rel="stylesheet" href="src/icomoon/style.css">
 </head>
 <body>
 	<form method="get" action="<?php echo $_SERVER[ "PHP_SELF" ]; ?>">
-		<input type="search" name="families" value="<?echo $_GET[ "families" ]; ?>">
+		<input type="text" name="families" value="<?echo $_GET[ "families" ]; ?>">
 		<button type="submit">Find</button>
 		<p>*** signifies a <code>font-family</code> name that is not explicitly available in CSS and only available as an alias.</p>
 
