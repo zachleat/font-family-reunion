@@ -9,9 +9,16 @@
 </head>
 <body>
 	<form method="get" action="<?php echo $_SERVER[ "PHP_SELF" ]; ?>">
-		<input type="text" name="families" value="<?echo $_GET[ "families" ]; ?>">
-		<button type="submit">Find</button>
-		<p>*** signifies a <code>font-family</code> name that is not explicitly available in CSS and only available as an alias.</p>
+		<label for="families">font-family: </label>
+		<input type="text" id="families" name="families" value="<?echo $_GET[ "families" ]; ?>" placeholder="fantasy">
+		<button type="submit">Show</button>
+		<!-- <p>See more examples:
+			<ul>
+				<li><code>font-family: cursive</code></li>
+				<li><code>font-family: Andale Mono, monospace</code></li>
+			</ul>
+		</p> -->
+		<p class="note">*** signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
 
 	</form>
 	<div class="results">

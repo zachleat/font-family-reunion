@@ -10,6 +10,7 @@ body {
 	max-width: 34em;
 	padding: 0 1em;
 }
+label,
 code {
 	font-family: Consolas, monospace;
 }
@@ -34,11 +35,11 @@ input:focus,
 button:focus {
 	outline: none;
 	border: 1px solid #999;
-	box-shadow: 0 0 0 3px #e2d9c7;
+	box-shadow: 0 0 0 3px #c3b9a5;
 }
 input {
 	vertical-align: middle;
-	width: 78%;
+	width: 75%;
 	font-size: 1em;
 	padding: .4em .6em;
 }
@@ -58,6 +59,15 @@ button {
 	background-image: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,.25)); /* IE10+ */
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,.25)); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,255,255,0)', endColorstr='rgba(0,0,0,.25)',GradientType=0 ); /* IE6-9 */
+}
+.note {
+	font-size: .8125em;
+}
+
+@media ( min-width: 26em ) {
+	input {
+		width: 50%;
+	}
 }
 
 /* Results Tables */
@@ -91,7 +101,7 @@ button {
 .results table td,
 .results table th {
 	padding: .4em .8em .4em .2em;
-	height: 2.2em;
+	height: 2.4em;
 }
 .results table td:first-child + td,
 .results table th:first-child + th {
@@ -114,6 +124,7 @@ button {
 	font-size: .875em;
 }
 .results table tbody td:first-child {
+	color: #787266;
 	border-bottom: 1px dotted #ccc;
 }
 .results table tbody td:first-child + td {
