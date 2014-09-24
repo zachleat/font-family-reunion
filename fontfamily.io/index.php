@@ -26,7 +26,8 @@
 		return $clean;
 	}
 
-	$families = explode( ",", $_GET[ "families" ] );
+	$families = preg_replace("/[\/\.]/", '', $_GET[ "families" ] );
+	$families = explode( ",", $families );
 	$families = array_reverse( $families );
 	$files = array();
 	$files[] = "./defaults/default.html";
@@ -34,10 +35,11 @@
 		$files[] = "./results/" . toAscii( $family ) . ".html";
 	}
 	foreach( $files as $file ) {
-		include $file;
+		if( file_exists( $file ) ) {
+			include $file;
+		}
 	}
 ?>
 	</div>
-	<script src="../bower_components/jquery/dist/jquery.js"></script>
 </body>
 </html>
