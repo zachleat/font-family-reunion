@@ -5,9 +5,9 @@
 	</thead>
 	<tbody>
 		<% operatingSystems.forEach(function(os){ %>
-			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %>">
+			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %><% if( os.fallback ) { %> fallback<% } %>">
 				<td class="<%= os.shortcode %>"><%= os.name %> <%= os.version %></td>
-				<td><%= os.fontFamily %></td>
+				<td><%= os.fontFamily %><% if( !os.fontFamily ) { %>&#160;<% } %></td>
 			</tr>
 		<% }) %>
 	</tbody>

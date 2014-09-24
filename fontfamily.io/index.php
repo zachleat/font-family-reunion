@@ -19,11 +19,18 @@
 		position: absolute;
 		left: 0;
 		top: 0;
+		table-layout: fixed;
+		empty-cells: show;
 	}
 	.results table td,
 	.results table th {
-		width: 50%;
 		padding: .4em .8em;
+		width: 55%;
+		/*white-space: nowrap;*/
+	}
+	.results table td:first-child + td,
+	.results table th:first-child + th {
+		width: 45%;
 	}
 	.results table .unsupported {
 		visibility: hidden;
@@ -44,6 +51,7 @@
 	.aliased td + td {
 		background-color: #A8BD04;
 	}
+	.fallback td + td,
 	.unsupported td + td {
 		background-color: #C44230;
 	}

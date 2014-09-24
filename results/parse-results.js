@@ -10,6 +10,18 @@ results.families.forEach(function( family, osId ) {
 		shortcode: family.shortcode
 	};
 
+	if( family.aliases[ "" ] ) {
+		if( !lookupTable[ "" ] ) {
+			lookupTable[ "" ] = {};
+		}
+
+		lookupTable[ "" ][ osId ] = {
+			fallback: true,
+			alias: family.aliases[ "" ],
+			fontFamily: familyName
+		};
+	}
+
 	family.families.forEach(function( familyName ) {
 		var normalizedFamilyName = familyName.toLowerCase();
 
@@ -18,6 +30,7 @@ results.families.forEach(function( family, osId ) {
 		}
 
 		lookupTable[ normalizedFamilyName ][ osId ] = {
+			fallback: false,
 			alias: family.aliases[ normalizedFamilyName ],
 			fontFamily: familyName
 		};
@@ -64,6 +77,7 @@ FFRLookup.prototype.toJSON = function() {
 				"support": true,
 				"alias": false,
 				"unsupported": false,
+				"fallback": false,
 				"shortcode": "win8",
 				"name": "Windows 8",
 				"fontFamily": "Times New Roman"
@@ -81,6 +95,7 @@ FFRLookup.prototype.toJSON = function() {
 			support: !!( this.support[ osId ] && !this.support[ osId ].alias ),
 			alias: !!( this.support[ osId ] && this.support[ osId ].alias ),
 			unsupported: !this.support[ osId ],
+			fallback: !!( this.support[ osId ] && this.support[ osId ].fallback ),
 			shortcode: os.shortcode,
 			name: os.name,
 			version: os.version,
@@ -100,11 +115,21 @@ FFRLookup.prototype.toString = function() {
 };
 
 // http://code.activestate.com/recipes/577787-slugify-make-a-string-usable-in-a-url-or-filename/
-FFRLookup.prototype.slugify = function() {
+FFRLookup.prototype.getFileName = function() {
 	var s = this.familyList;
   s = s.replace( /[^\w\s-]/g, '').trim().toLowerCase();
   s = s.replace( /[-\s]+/g , '-');
   return s;
+};
+
+FFRLookup.prototype.getFilePath = function() {
+	var filename = this.getFileName();
+
+	if( filename === "" ) {
+		return "../fontfamily.io/defaults/default.html";
+	}
+
+	return "../fontfamily.io/results/" + filename + ".html";
 };
 
 var db,
@@ -116,10 +141,11 @@ var db,
 for( var familyName in lookupTable ) {
 	db = new FFRLookup( familyName );
 	str = ejs.render( template, {
-		slug: db.slugify(),
+		slug: db.getFileName(),
 		operatingSystems: db.toJSON()
 	});
-	fs.writeFile( "../fontfamily.io/results/" + db.slugify() + ".html", str, function( error ) {
+
+	fs.writeFile( db.getFilePath(), str, function( error ) {
 		if( error ) {
 			console.log( 'template error: ', error );
 		} else {
