@@ -13,7 +13,7 @@
 			%>
 			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %><% if( os.fallback ) { %> fallback<% } %>">
 				<td><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span></td>
-				<td<% if( os.fontFamily && !os.exceptions ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %> <% if( count >= 3 ) { %>class="long-list"<% } %>>
+				<td<% if( os.fontFamily && os.fontFamily[ 0 ] !== '(' && !os.exceptions ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %> <% if( count >= 3 ) { %>class="long-list"<% } %>>
 					<%
 					if( os.fontFamily ) {
 						if( os.exceptions ) { %><span><% }
