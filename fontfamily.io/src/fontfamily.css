@@ -308,6 +308,7 @@ button {
 .icon-windows:before {
 	content: "\e604";
 }
+.icon-win-phone-8:before,
 .icon-win-8:before,
 .icon-win-8-1:before,
 .icon-windows8:before {

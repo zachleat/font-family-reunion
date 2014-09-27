@@ -5,7 +5,6 @@ SERVER:
 TODO:
 * Android 2.3 (something is broken on fontfaceonload here)
 * Windows Phone 7.5
-* Windows Phone 8
 * Blackberry OS 6
 * Blackberry OS 7
 * Blackberry OS 10
