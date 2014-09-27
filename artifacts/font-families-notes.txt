@@ -1,26 +1,172 @@
+SERVER:
+	Start mongodb> mongod
+	Start node.js> node db/index.js
+
 TODO:
-* Windows Vista
-* Android 2.3
-* Android 4.0
+* Android 2.3 (something is broken on fontfaceonload here)
 * Windows Phone 7.5
-* Windows Phone 8
 * Blackberry OS 6
 * Blackberry OS 7
 * Blackberry OS 10
-* Test if Firefox for Android has different fonts than Chrome, Browser
+* Add a11y to tables, legend for colors (alternative to colors)
+* Add logo
+
 
 * Issues with * Bold (and etc) family names: http://stackoverflow.com/questions/11878088/firefox-not-recognizing-a-font
+* Iskoola Pota pretends it’s Times New Roman on Windows 8, 8.1 (higher unicode range font)
 
 Notes:
 * Unicode Last Resort "LastResort" shows in Mac Chrome but not Firefox
 * "Webdings","Wingdings","Wingdings 2","Wingdings 3" Don’t show in Mac Chrome but does show in Firefox
-* "fantasy" on Windows is IMPACT. on Mac OS it’s Papyrus
+
+
+* default
+	* Windows XP
+		* Times New Roman (serif): IE8, FF32, Chrome 37, Opera 24
+	* Windows 7
+		* Times New Roman (not serif): IE9-10
+		* Times New Roman (serif): IE11++, FF32, Chrome 37, Opera 24
+	* Windows 8
+		* Times New Roman (not serif): IE10
+		* Times New Roman (serif): FF32, Chrome 37, Opera 24
+	* Windows 8.1
+		* Times New Roman (serif): IE11, FF32, Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Times (serif): FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Times (serif): FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Times (serif): FF32, Safari 6.1, Chrome 37, Opera 24
+	* OS X Mavericks
+		* Times (serif): FF32, Safari 7.0, Chrome 37, Opera 24
+
+
+* fantasy
+	* Windows XP
+		* (none found): IE8
+		* Impact: Chrome 37, Opera 24
+		* Microsoft Sans Serif: FF32
+	* Windows 7:
+		* Batang (serif): IE9
+		* Gabriola: IE10++, IE11
+		* Microsoft Sans Serif: FF32
+		* Impact: Chrome 37, Opera 24
+	* Windows 8
+		* Gabriola: IE10
+		* Microsoft Sans Serif: FF32
+		* Impact: Chrome 37, Opera 24
+	* Windows 8.1
+		* Gabriola: IE11
+		* Microsoft Sans Serif: FF32
+		* Impact: Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Papyrus: FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Papyrus: FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Papyrus: FF32, Safari 6.1, Chrome 37, Opera 24
+	* OS X Mavericks
+		* Papyrus: FF32, Safari 7.0, Chrome 37, Opera 24
+
+
+* cursive:
+	* Windows XP
+		* Comic Sans MS: IE8, FF32, Chrome 37, Opera 24
+	* Windows 7
+		* Estrangelo Edessa: IE9-IE11
+		* Comic Sans MS: FF32, Chrome 37, Opera 24
+	* Windows 8
+		* Comic Sans MS: IE10** (resumed the previously held Windows XP value), FF32, Chrome 37, Opera 24
+	* Windows 8.1
+		* Comic Sans MS: IE11, FF32, Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Apple Chancery: FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Apple Chancery: FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Apple Chancery: FF32, Safari 6.1, Chrome 37, Opera 24
+	* OS X Mavericks
+		* Apple Chancery: FF32, Safari 7.0, Chrome 37, Opera 24
+
+
+* monospace
+	* Windows XP
+		* Courier New: IE8, FF32, Chrome 37, Opera 24
+	* Windows 7
+		* Courier New: IE9-11, FF32
+		* Consolas: Chrome 37**, Opera 24** (Interesting that Chrome/Opera use Consolas, a Microsoft font, but Microsoft does not in IE. One would never dream of drawing any conclusions about the progressiveness of a browser from this fact.)
+	* Windows 8
+		* Courier New: IE10, FF32
+		* Consolas: Chrome 37, Opera 24
+	* Windows 8.1
+		* Courier New: IE11, FF32
+		* Consolas: Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Courier: FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Courier: FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Courier: FF32, Safari 6.1, Chrome 37, Opera 24
+	* OS X Mavericks
+		* Courier: FF32, Safari 7.0, Chrome 37, Opera 24
+
+
+* sans-serif
+	* Windows XP
+		* Arial: IE8, FF32, Chrome 37, Opera 24
+	* Windows 7
+		* Arial: IE9-11, FF32, Chrome 37, Opera 24
+	* Windows 8
+		* Arial: IE10, FF32, Chrome 37, Opera 24
+	* Windows 8.1
+		* Arial: IE11, FF32, Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Helvetica: FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Helvetica: FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Helvetica: FF32, Safari 6.1, Chrome 37, Opera 24
+	* OS X Mavericks
+		* Helvetica: FF32, Safari 7.0, Chrome 37, Opera 24
+
+
+* serif
+	* Windows XP
+		* Times New Roman: IE8, FF32, Chrome 37, Opera 24
+	* Windows 7
+		* Batang (also fantasy): IE9++
+		* Batang (not fantasy): IE10 (http://webmasters.stackexchange.com/questions/34399/unknown-css-font-family-oddity-with-ie7-10-on-windows-vista-7-8)
+		* Times New Roman: IE11++, FF32, Chrome 37, Opera 24
+	* Windows 8
+		* Batang (not fantasy): IE10
+		* Times New Roman: FF32, Chrome 37, Opera 24
+	* Windows 8.1
+		* Times New Roman: IE11, FF32, Chrome 37, Opera 24
+	* OS X Snow Leopard
+		* Times: FF32, Safari 5.1, Chrome 37, Opera 24
+	* OS X Lion
+		* Times: FF32, Safari 6.0, Chrome 37, Opera 24
+	* OS X Mountain Lion
+		* Times: FF32, Safari 6.1, Chrome 37, Opera 24
+
+
+** NOTE: (changed from the previous OS version)
+++ NOTE: (changed from the previous browser version)
+
+
 * Droid Sans is the only as-is font-family available by name on Android. None of the other variants of Droid Sans or Roboto (used in 4.0+) are available for use in font-family, they are used through aliases.
+	* Android results: *** fonts are not actually available for use in font-family list.
 	* http://jsbin.com/qudiri/1
 	* Bug with older Android, defaults to sans-serif if it doesn’t recognize a font in the stack: https://code.google.com/p/android/issues/detail?id=11356
 
 	* See also test case http://jsfiddle.net/9z3tD/4/
 	* See also test case and background info http://stackoverflow.com/questions/6809944/default-font-set-on-android/16718523#16718523
+
+
+Stack overflow answers:
+* http://stackoverflow.com/questions/3200069/css-fonts-on-android
+* http://stackoverflow.com/questions/6809944/default-font-set-on-android/16718523#16718523
+
 
 {
 	"ua": "",

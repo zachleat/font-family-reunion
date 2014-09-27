@@ -1,0 +1,331 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: Helvetica, sans-serif;
+	background-color: #F2E8D5;
+	margin: 0 auto;
+	max-width: 50em;
+	padding: 0 1em;
+}
+label,
+code {
+	font-family: Consolas, monospace;
+}
+abbr {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+h1, h2 {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 8.1vw;
+	margin-bottom: 0;
+}
+h2 {
+	font-size: 3.7vw;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 2em;
+}
+@media (min-width: 34em) {
+	h1 {
+		font-size: 2.8em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+}
+.icons-loaded .a11y-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Links */
+:link,
+:visited {
+	color: inherit;
+	text-decoration: none;
+	padding: .5em;
+}
+:link:hover {
+	background-color: #e0d6c5;
+}
+.os-list :link {
+	display: block;
+}
+
+/* Form */
+form {
+	margin: 1em 0;
+	text-align: center;
+}
+input,
+button {
+	-webkit-appearance: none; /* for iOS */
+	border: 1px solid #bbbdbf;
+	border-radius: .3em;
+	border-collapse: separate; /* IE9 issue with box-shadow when inside tables http://stackoverflow.com/questions/5617455/issue-with-box-shadow-on-ie9 */
+	box-shadow: inset 0 0 1px 3px rgba( 0, 0, 0, 0.04 );
+}
+input:focus,
+button:focus {
+	outline: none;
+	border: 1px solid #999;
+	box-shadow: 0 0 0 3px #c3b9a5;
+}
+input {
+	vertical-align: middle;
+	font-size: 1em;
+	padding: .4em 4em .4em .6em;
+}
+button {
+	font-size: .8125em;
+	padding: .2em .6em;
+	text-transform: uppercase;
+
+	text-shadow: 1px 1px 1px #222;
+	border-color: #39b54a;
+	color: #fff;
+	background-color: #39b54a;
+}
+.form-group {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.form-group input {
+	width: 100%;
+}
+.form-group button {
+	position: absolute;
+	top: .3em;
+	right: .4em;
+}
+.note {
+	margin: 1em auto;
+	font-size: .8125em;
+	max-width: 38em;
+}
+
+@media ( min-width: 27em ) {
+	.form-group {
+		width: 70%;
+	}
+}
+
+/* Results Tables */
+.results {
+	position: relative;
+	margin-left: -1em;
+	margin-right: -1em;
+}
+.results .version {
+	padding-left: .5em;
+}
+.results [class^="icon-"],
+.results [class*=" icon-"] {
+	font-size: 1.25em;
+	vertical-align: text-bottom;
+}
+.results table {
+	/*opacity: .4;*/
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	empty-cells: show;
+	border-spacing: 4px;
+}
+.results table tbody tr {
+	padding-bottom: 1em;
+}
+.results table td,
+.results table th {
+	padding: .4em .8em .4em .2em;
+	height: 2.4em;
+}
+.results table td:first-child + td {
+	height: 3.5em;
+}
+.results table td:first-child + td,
+.results table th:first-child + th {
+	padding-left: .8em;
+}
+
+.results table thead,
+/*.results table tbody td:first-child,*/
+.results table .unsupported {
+	pointer-events: none;
+	visibility: hidden;
+}
+.results table:first-child thead,
+/*.results table:first-child tbody td:first-child,*/
+.results table:first-child .unsupported {
+	pointer-events: auto;
+	visibility: visible;
+}
+.results table tbody td:first-child {
+	color: #787266;
+}
+.results table tbody td:first-child + td {
+	color: #fff;
+}
+.results .exception {
+	padding-left: 1em;
+	display: inline-block;
+}
+.results .exception:first-child {
+	padding-left: 0;
+}
+.results .long-list .exception {
+	line-height: 160%;
+}
+.results .exception .version {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.results .aliased .exception [class^="icon-"],
+.results .aliased .exception [class*=" icon-"],
+.results .aliased .exception .version {
+	color: #6f7e02;
+}
+.results .fallback .exception [class^="icon-"],
+.results .fallback .exception [class*=" icon-"],
+.results .fallback .exception .version {
+	color: #7e2a1e;
+}
+.results table td > span {
+	font-size: .8125em; /* 13px */
+}
+
+.results table tr,
+.results table th,
+.results table td {
+	float: left;
+	width: 100%;
+}
+
+@media ( min-width: 39em ) {
+	.results table {
+		border-spacing: 6px;
+	}
+	.results table tbody tr {
+		padding-bottom: 0;
+	}
+	.results table tbody td:first-child {
+		border-bottom: 1px dotted #ccc;
+	}
+	.results table tr,
+	.results table th,
+	.results table td {
+		float: none;
+		width: auto;
+	}
+	.results table th:first-child,
+	.results table td:first-child {
+		width: 35%;
+	}
+}
+
+.supported td + td {
+	background-color: #39B54A;
+}
+.aliased td + td {
+	background-color: #A8BD04;
+}
+.fallback td + td,
+.unsupported td + td {
+	background-color: #C44230;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon/fonts/icomoon.eot?5zsouo');
+	src:url('icomoon/fonts/icomoon.eot?#iefix5zsouo') format('embedded-opentype'),
+		url('icomoon/fonts/icomoon.woff?5zsouo') format('woff'),
+		url('icomoon/fonts/icomoon.ttf?5zsouo') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	display: none;
+}
+.icons-loaded [class^="icon-"],
+.icons-loaded [class*=" icon-"] {
+	display: inline;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tux:before {
+	content: "\e600";
+}
+.icon-ios-7-1:before,
+.icon-ios-7:before,
+.icon-ios-6-1:before,
+.icon-ios-6:before,
+.icon-apple:before {
+	content: "\e601";
+}
+.icon-os-x-snow-leopard:before,
+.icon-os-x-lion:before,
+.icon-os-x-mountain-lion:before,
+.icon-os-x-mavericks:before,
+.icon-finder:before {
+	content: "\e602";
+}
+.icon-android-4-4:before,
+.icon-android:before {
+	content: "\e603";
+}
+.icon-win-xp-sp3:before,
+.icon-win-xp:before,
+.icon-win-7:before,
+.icon-win-vista:before,
+.icon-windows:before {
+	content: "\e604";
+}
+.icon-win-phone-8:before,
+.icon-win-8:before,
+.icon-win-8-1:before,
+.icon-windows8:before {
+	content: "\e605";
+}
+.icon-chrome:before {
+	content: "\e606";
+}
+.icon-firefox:before {
+	content: "\e607";
+}
+.icon-IE:before {
+	content: "\e608";
+}
+.icon-opera:before {
+	content: "\e609";
+}
+.icon-safari:before {
+	content: "\e60a";
+}
