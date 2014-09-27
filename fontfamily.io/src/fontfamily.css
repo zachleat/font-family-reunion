@@ -18,6 +18,15 @@ abbr {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
+h1 {
+	font-size: 8.1vw;
+	font-family: Helvetica, sans-serif;
+}
+@media (min-width: 34em) {
+	h1 {
+		font-size: 3.1em;
+	}
+}
 
 /* Form */
 form {
@@ -27,7 +36,7 @@ input,
 button {
 	-webkit-appearance: none; /* for iOS */
 	border: 1px solid #bbbdbf;
-	border-radius: 1.5em;
+	border-radius: .3em;
 	border-collapse: separate; /* IE9 issue with box-shadow when inside tables http://stackoverflow.com/questions/5617455/issue-with-box-shadow-on-ie9 */
 	box-shadow: inset 0 0 1px 3px rgba( 0, 0, 0, 0.04 );
 }
@@ -39,9 +48,8 @@ button:focus {
 }
 input {
 	vertical-align: middle;
-	width: 75%;
 	font-size: 1em;
-	padding: .4em .6em;
+	padding: .4em 4em .4em .6em;
 }
 button {
 	font-size: .8125em;
@@ -58,15 +66,27 @@ button {
 	background-image: -o-linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,.25)); /* Opera 11.10+ */
 	background-image: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,.25)); /* IE10+ */
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,.25)); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,255,255,0)', endColorstr='rgba(0,0,0,.25)',GradientType=0 ); /* IE6-9 */
+}
+.form-group {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.form-group input {
+	width: 100%;
+}
+.form-group button {
+	position: absolute;
+	top: .3em;
+	right: .4em;
 }
 .note {
 	font-size: .8125em;
 }
 
-@media ( min-width: 26em ) {
-	input {
-		width: 50%;
+@media ( min-width: 27em ) {
+	.form-group {
+		width: 70%;
 	}
 }
 

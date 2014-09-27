@@ -1,0 +1,9 @@
+AddDefaultCharset utf-8 
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^([^/\.]+)/$ /$1 [R,L]
+
+RewriteCond %{REQUEST_URI} !\.(js|ico|gif|jpg|png|css)$
+RewriteRule ^([^/\.]+)$ index.php?families=$1 [L]

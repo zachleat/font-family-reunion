@@ -1,3 +1,27 @@
+<?php
+function sanitize( $str ) {
+	$str = preg_replace("/[\/\.]/", '', $str );
+	$str = mb_convert_encoding($str, 'UTF-8', 'UTF-8');
+	$str = htmlentities($str, ENT_QUOTES, 'UTF-8');
+	return $str;
+}
+
+// http://cubiq.org/the-perfect-php-clean-url-generator
+function toAscii( $str ) {
+	$str = trim( $str );
+	$clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $str);
+	$clean = strtolower(trim($clean, '-'));
+
+	return preg_replace("/[\/_|+ -]+/", '-', $clean);
+}
+
+function denormalizeFamily( $str ) {
+	$str = trim( $str );
+	return preg_replace("/_/", ' ', $str);
+}
+
+$families = sanitize( $_GET[ "families" ] );
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,10 +32,13 @@
 	<link rel="stylesheet" href="src/icomoon/style.css">
 </head>
 <body>
-	<form method="get" action="<?php echo $_SERVER[ "PHP_SELF" ]; ?>">
+	<h1>Font Family Reunion</h1>
+	<form method="get" action="/">
 		<label for="families">font-family: </label>
-		<input type="text" id="families" name="families" value="<?echo $_GET[ "families" ]; ?>" placeholder="fantasy">
-		<button type="submit">Show</button>
+		<div class="form-group">
+			<input type="text" id="families" name="families" value="<?php echo denormalizeFamily( $families ); ?>">
+			<button type="submit">Show</button>
+		</div>
 		<!-- <p>See more examples:
 			<ul>
 				<li><code>font-family: cursive</code></li>
@@ -23,17 +50,6 @@
 	</form>
 	<div class="results">
 <?php
-	// http://cubiq.org/the-perfect-php-clean-url-generator
-	function toAscii( $str ) {
-		$str = trim( $str );
-		$clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $str);
-		$clean = strtolower(trim($clean, '-'));
-		$clean = preg_replace("/[\/_|+ -]+/", '-', $clean);
-
-		return $clean;
-	}
-
-	$families = preg_replace("/[\/\.]/", '', $_GET[ "families" ] );
 	$families = explode( ",", $families );
 	$families = array_reverse( $families );
 	$files = array();
@@ -48,5 +64,6 @@
 	}
 ?>
 	</div>
+	<script src="src/reunion.js"></script>
 </body>
 </html>
