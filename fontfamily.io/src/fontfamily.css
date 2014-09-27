@@ -114,7 +114,6 @@ button {
 	position: absolute;
 	left: 0;
 	top: 0;
-	table-layout: fixed;
 	empty-cells: show;
 	border-spacing: 4px;
 }
@@ -140,23 +139,55 @@ button {
 	pointer-events: default;
 	visibility: visible;
 }
+.results table tbody tr {
+	padding-bottom: 1em;
+}
 .results table tbody td {
 	font-size: .875em;
 }
 .results table tbody td:first-child {
 	color: #787266;
-	border-bottom: 1px dotted #ccc;
 }
 .results table tbody td:first-child + td {
 	color: #fff;
+}
+.results table td abbr {
+	font-size: .75em;
+	margin-left: .3em;
+}
+.results table td abbr:first-child {
+	margin-left: 0;
+}
+
+.results table tr,
+.results table th,
+.results table td {
+	float: left;
+	width: 100%;
 }
 
 @media ( min-width: 30em ) {
 	.results table {
 		border-spacing: 6px;
 	}
+	.results table tbody tr {
+		padding-bottom: 0;
+	}
+	.results table tbody td:first-child {
+		border-bottom: 1px dotted #ccc;
+	}
 	.results table tbody td:first-child + td {
 		font-size: 1em;
+	}
+	.results table tr,
+	.results table th,
+	.results table td {
+		float: none;
+		width: auto;
+	}
+	.results table th:first-child,
+	.results table td:first-child {
+		width: 40%;
 	}
 }
 

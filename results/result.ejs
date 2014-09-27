@@ -7,7 +7,20 @@
 		<% operatingSystems.forEach(function(os){ %>
 			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %><% if( os.fallback ) { %> fallback<% } %>">
 				<td><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="name"><%= os.name %></span> <span class="version"><%= os.version %></span></td>
-				<td<% if( os.fontFamily ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %>><%= os.fontFamily %><% if( !os.fontFamily ) { %>&#160;<% } %></td>
+				<td<% if( os.fontFamily ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %>>
+					<%
+					if( os.fontFamily ) {
+						if( os.exceptions ) { %><span><% }
+						%><%= os.fontFamily %><%
+						if( os.exceptions ) { %></span><% }
+					}
+
+					if( os.exceptions ) {
+						for( var j in os.exceptions ) {
+							%><abbr title="<%= j %>"><%= os.exceptions[ j ] %></abbr> <%
+						}
+					} %>
+				</td>
 			</tr>
 		<% }) %>
 	</tbody>

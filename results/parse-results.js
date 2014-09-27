@@ -18,6 +18,7 @@ results.families.forEach(function( family, osId ) {
 		lookupTable[ "" ][ osId ] = {
 			fallback: true,
 			alias: family.aliases.__default,
+			exceptions: family.exceptions ? family.exceptions.__default : false,
 			fontFamily: ""
 		};
 	}
@@ -32,6 +33,7 @@ results.families.forEach(function( family, osId ) {
 		lookupTable[ normalizedFamilyName ][ osId ] = {
 			fallback: false,
 			alias: family.aliases[ normalizedFamilyName ],
+			exceptions: family.exceptions ? family.exceptions[ normalizedFamilyName ] : false,
 			fontFamily: familyName
 		};
 	});
@@ -87,19 +89,30 @@ FFRLookup.prototype.toJSON = function() {
 	*/
 	var arr = [],
 		json = {},
-		os;
+		os,
+		familyName,
+		useAlias;
 	
 	for( var osId in this.support ) {
 		os = operatingSystems[ osId ];
+		useAlias = false;
+		familyName = this.support[ osId ] ? this.support[ osId ].fontFamily : "";
+
+		if( this.support[ osId ] && ( this.support[ osId ].alias || this.support[ osId ].alias === "" ) ) {
+			useAlias = true;
+			familyName = this.support[ osId ].alias;
+		}
+
 		arr.push({
 			support: !!( this.support[ osId ] && !this.support[ osId ].alias ),
-			alias: !!( this.support[ osId ] && this.support[ osId ].alias ),
+			alias: useAlias,
 			unsupported: !this.support[ osId ],
 			fallback: !!( this.support[ osId ] && this.support[ osId ].fallback ),
+			exceptions: this.support[ osId ] && this.support[ osId ].exceptions,
 			shortcode: os.shortcode,
 			name: os.name,
 			version: os.version,
-			fontFamily: this.support[ osId ] ? ( this.support[ osId ].alias || this.support[ osId ].fontFamily ) : ""
+			fontFamily: familyName
 		});
 	}
 

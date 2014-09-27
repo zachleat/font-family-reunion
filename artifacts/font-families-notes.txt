@@ -10,10 +10,8 @@ TODO:
 * Blackberry OS 7
 * Blackberry OS 10
 * Add OS-level list of all available fonts.
-* Fix URL friendliness using .htaccess
 * Add a11y to tables
 * Add logo
-* Add default exceptions
 
 
 * Issues with * Bold (and etc) family names: http://stackoverflow.com/questions/11878088/firefox-not-recognizing-a-font
