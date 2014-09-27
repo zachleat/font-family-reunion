@@ -18,14 +18,26 @@ abbr {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
-h1 {
-	font-size: 8.1vw;
+h1, h2 {
 	font-family: Helvetica, sans-serif;
 	text-align: center;
 }
+h1 {
+	font-size: 8.1vw;
+	margin-bottom: 0;
+}
+h2 {
+	font-size: 3.7vw;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 2em;
+}
 @media (min-width: 34em) {
 	h1 {
-		font-size: 3.1em;
+		font-size: 2.8em;
+	}
+	h2 {
+		font-size: 1.4em;
 	}
 }
 .a11y-hidden {
@@ -34,6 +46,20 @@ h1 {
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Links */
+:link,
+:visited {
+	color: inherit;
+	text-decoration: none;
+	padding: .5em;
+}
+:link:hover {
+	background-color: #e0d6c5;
+}
+.os-list :link {
+	display: block;
 }
 
 /* Form */
@@ -99,6 +125,9 @@ button {
 	margin-left: -1em;
 	margin-right: -1em;
 }
+.results .version {
+	padding-left: .5em;
+}
 .results [class^="icon-"],
 .results [class*=" icon-"] {
 	font-size: 1.25em;
@@ -130,15 +159,15 @@ button {
 }
 
 .results table thead,
-.results table tbody td:first-child,
+/*.results table tbody td:first-child,*/
 .results table .unsupported {
 	pointer-events: none;
 	visibility: hidden;
 }
 .results table:first-child thead,
-.results table:first-child tbody td:first-child,
+/*.results table:first-child tbody td:first-child,*/
 .results table:first-child .unsupported {
-	pointer-events: default;
+	pointer-events: auto;
 	visibility: visible;
 }
 .results table tbody td:first-child {
@@ -182,7 +211,7 @@ button {
 	width: 100%;
 }
 
-@media ( min-width: 36em ) {
+@media ( min-width: 39em ) {
 	.results table {
 		border-spacing: 6px;
 	}
