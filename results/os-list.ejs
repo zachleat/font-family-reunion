@@ -1,6 +1,6 @@
 <table id="<%= os.shortcode %>" class="os-list">
 	<thead>
-		<th><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span></th>
+		<th><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span> (<%= fontFamilies.length %> fonts)</th>
 	</thead>
 	<tbody>
 		<% fontFamilies.forEach(function( family ){

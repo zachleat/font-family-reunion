@@ -30,11 +30,10 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>fontfamily.io</title>
 	<link rel="stylesheet" href="/src/fontfamily.css">
-	<link rel="stylesheet" href="/src/icomoon/style.css">
 </head>
 <body>
 	<h1><a href="/">Font Family Reunion</a></h1>
-	<h2>Quickly find Operating Systems default fonts.</h2>
+	<h2>Compatibility tables for default local fonts.</h2>
 	<form method="get" action="/">
 		<label for="families">font-family: </label>
 		<div class="form-group">
@@ -47,6 +46,7 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 				<li><code>font-family: Andale Mono, monospace</code></li>
 			</ul>
 		</p> -->
+		<p class="note">Per the specification, font-family names are case insensitive.</p>
 		<p class="note">*** signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
 
 	</form>
@@ -73,6 +73,7 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 	}
 ?>
 	</div>
+	<script src="/src/fontfaceonload.js"></script>
 	<script src="/src/reunion.js"></script>
 </body>
 </html>

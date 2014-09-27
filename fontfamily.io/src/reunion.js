@@ -8,6 +8,13 @@
 		return;
 	}
 
+	FontFaceOnload( "My Custom Font Icon", {
+		success: function() {
+			document.documentElement.className += " icons-loaded";
+		},
+		glyphs: "\uE600\uE601\uE602\uE603\uE604"
+	});
+
 	var form = doc.getElementsByTagName( "form" )[ 0 ],
 		input = form.getElementsByTagName( "input" )[ 0 ],
 		commaWhitespaceRegex = /\s*,\s*/g;
