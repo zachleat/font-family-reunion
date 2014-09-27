@@ -56,7 +56,7 @@
 		$success = $( "#success" ),
 		deferreds = [];
 
-	$.getJSON( "../src/font-families.json" ).done(function( data ) {
+	$.getJSON( "src/font-families.json" ).done(function( data ) {
 		for( var j = 0, k = data.families.length; j < k; j++ ) {
 			(function( family ) {
 				var deferred = $.Deferred(),
@@ -87,7 +87,7 @@
 		$.when.apply( deferreds ).then(function() {
 			$success.find( "textarea" ).val( JSON.stringify( FFR.success ) );
 
-			if( false && confirm( "Save?" ) ) {
+			if( confirm( "Save?" ) ) {
 				$.ajax({
 					type: 'POST',
 					url: 'http://192.168.2.27:3000/save',

@@ -1,4 +1,6 @@
-var results = require( "./font-families-results.json" ),
+var ejs = require('ejs'),
+	fs = require('fs'),
+	results = require( "./font-families-results.json" ),
 	operatingSystems = {},
 	shortCodes = {},
 	lookupTable = {};
@@ -22,6 +24,20 @@ results.families.forEach(function( family, osId ) {
 			fontFamily: ""
 		};
 	}
+
+	var template = fs.readFileSync( "./os-list.ejs", 'utf8' ),
+		data = ejs.render( template, {
+			os: operatingSystems[ osId ],
+			fontFamilies: family.families
+		});
+
+	fs.writeFile( "../fontfamily.io/os/" + family.shortcode + ".html", data, function( error ) {
+		if( error ) {
+			console.log( 'os template error: ', error );
+		} else {
+			console.log( "os template success." );
+		}
+	});
 
 	family.families.forEach(function( familyName ) {
 		var normalizedFamilyName = familyName.toLowerCase();
@@ -146,19 +162,17 @@ FFRLookup.prototype.getFilePath = function() {
 };
 
 var db,
-	ejs = require('ejs'),
-	fs = require('fs'),
 	template = fs.readFileSync( "./result.ejs", 'utf8' ),
-	str;
+	data;
 
 for( var familyName in lookupTable ) {
 	db = new FFRLookup( familyName );
-	str = ejs.render( template, {
+	data = ejs.render( template, {
 		slug: db.getFileName(),
 		operatingSystems: db.toJSON()
 	});
 
-	fs.writeFile( db.getFilePath(), str, function( error ) {
+	fs.writeFile( db.getFilePath(), data, function( error ) {
 		if( error ) {
 			console.log( 'template error: ', error );
 		} else {

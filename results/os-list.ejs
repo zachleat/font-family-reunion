@@ -1,0 +1,15 @@
+<table id="<%= os.shortcode %>" class="os-list">
+	<thead>
+		<th><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span></th>
+	</thead>
+	<tbody>
+		<% fontFamilies.forEach(function( family ){
+			var isCssKeyword = family === 'serif' || family === 'sans-serif' || family === 'cursive' || family === 'fantasy' || family === 'monospace',
+				slug = family.replace( /\s/gi, '_' );
+			%>
+			<tr class="supported">
+				<td<% if( family && family[ 0 ] !== '(' ) { %> style="font-family: <% if( !isCssKeyword ) { %>'<% } %><%= family %><% if( !isCssKeyword ) { %>'<% } %>"<% } %>><a href="/<%= slug %>"><%= family %></a></td>
+			</tr>
+		<% }) %>
+	</tbody>
+</table>

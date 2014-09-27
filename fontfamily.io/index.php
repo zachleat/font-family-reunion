@@ -21,6 +21,7 @@ function denormalizeFamily( $str ) {
 }
 
 $families = sanitize( $_GET[ "families" ] );
+$os = sanitize( basename( $_GET[ "os" ] ) );
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,11 +29,12 @@ $families = sanitize( $_GET[ "families" ] );
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>fontfamily.io</title>
-	<link rel="stylesheet" href="src/fontfamily.css">
-	<link rel="stylesheet" href="src/icomoon/style.css">
+	<link rel="stylesheet" href="/src/fontfamily.css">
+	<link rel="stylesheet" href="/src/icomoon/style.css">
 </head>
 <body>
-	<h1>Font Family Reunion</h1>
+	<h1><a href="/">Font Family Reunion</a></h1>
+	<h2>Quickly find Operating Systems default fonts.</h2>
 	<form method="get" action="/">
 		<label for="families">font-family: </label>
 		<div class="form-group">
@@ -50,20 +52,27 @@ $families = sanitize( $_GET[ "families" ] );
 	</form>
 	<div class="results">
 <?php
-	$families = explode( ",", $families );
-	$families = array_reverse( $families );
-	$files = array();
-	$files[] = "./defaults/default.html";
-	foreach( $families as $family ) {
-		$files[] = "./results/" . toAscii( $family ) . ".html";
-	}
-	foreach( $files as $file ) {
+	if( $os ) {
+		$file = "./os/" . toAscii( basename( $os ) ) . ".html";
 		if( file_exists( $file ) ) {
-			include $file;
+			include_once( $file );
+		}
+	} else {
+		$families = explode( ",", $families );
+		$families = array_reverse( $families );
+		$files = array();
+		$files[] = "./defaults/default.html";
+		foreach( $families as $family ) {
+			$files[] = "./results/" . toAscii( basename( $family ) ) . ".html";
+		}
+		foreach( $files as $file ) {
+			if( file_exists( $file ) ) {
+				include( $file );
+			}
 		}
 	}
 ?>
 	</div>
-	<script src="src/reunion.js"></script>
+	<script src="/src/reunion.js"></script>
 </body>
 </html>
