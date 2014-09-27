@@ -7,7 +7,7 @@ body {
 	font-family: Helvetica, sans-serif;
 	background-color: #F2E8D5;
 	margin: 0 auto;
-	max-width: 34em;
+	max-width: 50em;
 	padding: 0 1em;
 }
 label,
@@ -26,6 +26,13 @@ h1 {
 	h1 {
 		font-size: 3.1em;
 	}
+}
+.a11y-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Form */
@@ -96,13 +103,6 @@ button {
 	margin-left: -1em;
 	margin-right: -1em;
 }
-.results .name {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-}
 .results [class^="icon-"],
 .results [class*=" icon-"] {
 	font-size: 1.25em;
@@ -117,16 +117,22 @@ button {
 	empty-cells: show;
 	border-spacing: 4px;
 }
+.results table tbody tr {
+	padding-bottom: 1em;
+}
 .results table td,
 .results table th {
 	padding: .4em .8em .4em .2em;
 	height: 2.4em;
 }
+.results table td:first-child + td {
+	height: 3em;
+}
 .results table td:first-child + td,
 .results table th:first-child + th {
-	white-space: nowrap;
 	padding-left: .8em;
 }
+
 .results table thead,
 .results table tbody td:first-child,
 .results table .unsupported {
@@ -139,24 +145,34 @@ button {
 	pointer-events: default;
 	visibility: visible;
 }
-.results table tbody tr {
-	padding-bottom: 1em;
-}
-.results table tbody td {
-	font-size: .875em;
-}
 .results table tbody td:first-child {
 	color: #787266;
 }
 .results table tbody td:first-child + td {
 	color: #fff;
 }
-.results table td abbr {
-	font-size: .75em;
-	margin-left: .3em;
+.results .exception {
+	padding-left: 4px;
 }
-.results table td abbr:first-child {
-	margin-left: 0;
+.results .exception:first-child {
+	padding-left: 0;
+}
+.results .exception .version {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.results .aliased .exception [class^="icon-"],
+.results .aliased .exception [class*=" icon-"],
+.results .aliased .exception .version {
+	color: #6f7e02;
+}
+.results .fallback .exception [class^="icon-"],
+.results .fallback .exception [class*=" icon-"],
+.results .fallback .exception .version {
+	color: #7e2a1e;
+}
+.results table td > span {
+	font-size: .8125em; /* 13px */
 }
 
 .results table tr,
@@ -166,7 +182,7 @@ button {
 	width: 100%;
 }
 
-@media ( min-width: 30em ) {
+@media ( min-width: 36em ) {
 	.results table {
 		border-spacing: 6px;
 	}
@@ -176,9 +192,6 @@ button {
 	.results table tbody td:first-child {
 		border-bottom: 1px dotted #ccc;
 	}
-	.results table tbody td:first-child + td {
-		font-size: 1em;
-	}
 	.results table tr,
 	.results table th,
 	.results table td {
@@ -187,7 +200,7 @@ button {
 	}
 	.results table th:first-child,
 	.results table td:first-child {
-		width: 40%;
+		width: 35%;
 	}
 }
 

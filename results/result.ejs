@@ -4,20 +4,48 @@
 		<th>Applied Font</th>
 	</thead>
 	<tbody>
-		<% operatingSystems.forEach(function(os){ %>
+		<% operatingSystems.forEach(function(os){
+			var count;
+			count = 0;
+			for( var j in os.exceptions ) {
+				count++;
+			}
+			%>
 			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %><% if( os.fallback ) { %> fallback<% } %>">
-				<td><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="name"><%= os.name %></span> <span class="version"><%= os.version %></span></td>
-				<td<% if( os.fontFamily ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %>>
+				<td><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span></td>
+				<td<% if( os.fontFamily && !os.exceptions ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %> <% if( count >= 3 ) { %>class="long-list"<% } %>>
 					<%
 					if( os.fontFamily ) {
 						if( os.exceptions ) { %><span><% }
 						%><%= os.fontFamily %><%
 						if( os.exceptions ) { %></span><% }
 					}
-
 					if( os.exceptions ) {
+						var browsers;
+
 						for( var j in os.exceptions ) {
-							%><abbr title="<%= j %>"><%= os.exceptions[ j ] %></abbr> <%
+
+							browsers = os.exceptions[ j ];
+							%><span class="exception"><%
+
+							for( var browser in browsers ) {
+
+								var key = '';
+								if( browser.indexOf( 'Internet Explorer' ) > -1 ) {
+									key = "icon-IE";
+								} else if( browser.indexOf( 'Chrome' ) > -1 ) {
+									key = "icon-chrome";
+								} else if( browser.indexOf( 'Opera' ) > -1 ) {
+									key = "icon-opera";
+								} else if( browser.indexOf( 'Firefox' ) > -1 ) {
+									key = "icon-firefox";
+								} else if( browser.indexOf( 'Safari' ) > -1 ) {
+									key = "icon-safari";
+								}
+
+								%><span class="<%= key %>" aria-hidden="true"></span><span class="a11y-hidden"><%= browser %></span><span class="version"><%= browsers[ browser ] %></span><%
+							} %>
+							<%= j %></span><%
 						}
 					} %>
 				</td>

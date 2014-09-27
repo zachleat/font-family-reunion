@@ -83,9 +83,9 @@
 			},
 			"exceptions": {
 				"fantasy": {
-					"Internet Explorer 8": "(none)",
-					"Chrome 37, Opera 24": "Impact",
-					"Firefox 32": "Microsoft Sans Serif"
+					"(Not Supported)": { "Internet Explorer": "8" },
+					"Impact": { "Chrome": "37", "Opera": "24" },
+					"Microsoft Sans Serif": { "Firefox": "32" }
 				}
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Comic Sans MS","Comic Sans MS Bold","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","Estrangelo Edessa","Franklin Gothic Medium","Franklin Gothic Medium Italic","Gautami","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Helvetica","Impact","Latha","Lucida Console","Lucida Sans Unicode","MV Boli","Mangal","Marlett","Microsoft Sans Serif","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Raavi","Shruti","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Webdings","Wingdings"]
@@ -109,9 +109,9 @@
 			},
 			"exceptions": {
 				"fantasy": {
-					"Internet Explorer 8": "(none)",
-					"Chrome 37, Opera 24": "Impact",
-					"Firefox 32": "Microsoft Sans Serif"
+					"(Not Supported)": { "Internet Explorer": "8" },
+					"Impact": { "Chrome": "37", "Opera": "24" },
+					"Microsoft Sans Serif": { "Firefox": "32" }
 				}
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Aharoni Bold","Andalus","Angsana New","Angsana New Bold","Angsana New Bold Italic","Angsana New Italic","AngsanaUPC","Arabic Transparent","Arabic Transparent Bold","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Batang","BatangChe","Browallia New","Browallia New Bold","Browallia New Bold Italic","Browallia New Italic","BrowalliaUPC","Comic Sans MS","Comic Sans MS Bold","Cordia New","Cordia New Bold","Cordia New Bold Italic","Cordia New Italic","CordiaUPC","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","David","David Bold","David Transparent","DilleniaUPC","DilleniaUPC Bold","DilleniaUPC Bold Italic","DilleniaUPC Italic","Dotum","DotumChe","Estrangelo Edessa","EucrosiaUPC","EucrosiaUPC Bold","EucrosiaUPC Bold Italic","EucrosiaUPC Italic","Fixed Miriam Transparent","FrankRuehl","Franklin Gothic Medium","Franklin Gothic Medium Italic","FreesiaUPC","FreesiaUPC Bold","FreesiaUPC Bold Italic","FreesiaUPC Italic","Gautami","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Gulim","GulimChe","Gungsuh","GungsuhChe","Helvetica","Impact","IrisUPC","IrisUPC Bold","IrisUPC Bold Italic","IrisUPC Italic","JasmineUPC","JasmineUPC Bold","JasmineUPC Bold Italic","JasmineUPC Italic","KodchiangUPC","KodchiangUPC Bold","KodchiangUPC Bold Italic","KodchiangUPC Italic","Latha","Levenim MT","Levenim MT Bold","LilyUPC","LilyUPC Bold","LilyUPC Bold Italic","LilyUPC Italic","Lucida Console","Lucida Sans Unicode","MS Gothic","MS Mincho","MS PGothic","MS PMincho","MS UI Gothic","MV Boli","Mangal","Marlett","Microsoft Sans Serif","MingLiU","Miriam","Miriam Fixed","Miriam Transparent","NSimSun","Narkisim","PMingLiU","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Raavi","Rod","Rod Transparent","Shruti","SimHei","SimSun","Simplified Arabic","Simplified Arabic Bold","Simplified Arabic Fixed","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Traditional Arabic","Traditional Arabic Bold","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Webdings","Wingdings"]
@@ -143,7 +143,7 @@
 			"notes": "Browserstack",
 			"aliases": {
 				"monospace": "Courier New",
-				"cursive": "Estrangelo Edessa",
+				"cursive": "",
 				"fantasy": "",
 				"sans-serif": "Arial",
 				"serif": "Times New Roman",
@@ -154,19 +154,20 @@
 			},
 			"exceptions": {
 				"__default": {
-					"Internet Explorer 9, 10": "Batang"
+					"Batang": { "Internet Explorer": "9-10" }
 				},
 				"monospace": {
-					"Chrome 37, Opera 24": "Consolas"
+					"Consolas": { "Chrome": "37", "Opera": "24" }
 				},
 				"cursive": {
-					"Chrome 37, Opera 24, Firefox 32": "Comic Sans MS"
+					"Comic Sans MS": { "Chrome": "37", "Opera": "24", "Firefox": "32" },
+					"Estrangelo Edessa": { "Internet Explorer": "9-11" }
 				},
 				"fantasy": {
-					"Internet Explorer 9": "Batang",
-					"Internet Explorer 10, 11": "Gabriola",
-					"Chrome 37, Opera 24": "Impact",
-					"Firefox 32": "Microsoft Sans Serif"
+					"Batang": { "Internet Explorer": "9" },
+					"Gabriola": { "Internet Explorer": "10-11" },
+					"Impact": { "Chrome": "37", "Opera": "24" },
+					"Microsoft Sans Serif": { "Firefox": "32" }
 				}
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Aharoni Bold","Andalus","Angsana New","Angsana New Bold","Angsana New Bold Italic","Angsana New Italic","AngsanaUPC","AngsanaUPC Bold","AngsanaUPC Bold Italic","AngsanaUPC Italic","Aparajita","Aparajita Bold","Aparajita Bold Italic","Aparajita Italic","Arabic Transparent","Arabic Transparent Bold","Arabic Typesetting","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Batang","BatangChe","Browallia New","Browallia New Bold","Browallia New Bold Italic","Browallia New Italic","BrowalliaUPC","BrowalliaUPC Bold","BrowalliaUPC Bold Italic","BrowalliaUPC Italic","Calibri","Calibri Bold","Calibri Bold Italic","Calibri Italic","Calibri Light","Calibri Light Italic","Cambria","Cambria Bold","Cambria Bold Italic","Cambria Italic","Cambria Math","Candara","Candara Bold","Candara Bold Italic","Candara Italic","Comic Sans MS","Comic Sans MS Bold","Consolas","Consolas Bold","Consolas Bold Italic","Consolas Italic","Constantia","Constantia Bold","Constantia Bold Italic","Constantia Italic","Corbel","Corbel Bold","Corbel Bold Italic","Corbel Italic","Cordia New","Cordia New Bold","Cordia New Bold Italic","Cordia New Italic","CordiaUPC","CordiaUPC Bold","CordiaUPC Bold Italic","CordiaUPC Italic","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","DFKai-SB","DaunPenh","David","David Bold","David Transparent","DilleniaUPC","DilleniaUPC Bold","DilleniaUPC Bold Italic","DilleniaUPC Italic","DokChampa","Dotum","DotumChe","Ebrima","Ebrima Bold","Estrangelo Edessa","EucrosiaUPC","EucrosiaUPC Bold","EucrosiaUPC Bold Italic","EucrosiaUPC Italic","Euphemia","FangSong","Fixed Miriam Transparent","FrankRuehl","Franklin Gothic Medium","Franklin Gothic Medium Italic","FreesiaUPC","FreesiaUPC Bold","FreesiaUPC Bold Italic","FreesiaUPC Italic","Gabriola","Gautami","Gautami Bold","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Gisha","Gisha Bold","Gulim","GulimChe","Gungsuh","GungsuhChe","Helvetica","Impact","IrisUPC","IrisUPC Bold","IrisUPC Bold Italic","IrisUPC Italic","Iskoola Pota","IskoolaPota-Bold","JasmineUPC","JasmineUPC Bold","JasmineUPC Bold Italic","JasmineUPC Italic","KaiTi","Kalinga","Kalinga Bold","Kartika","Kartika Bold","Khmer UI","Khmer UI Bold","KodchiangUPC","KodchiangUPC Bold","KodchiangUPC Bold Italic","KodchiangUPC Italic","Kokila","Kokila Bold","Kokila Bold Italic","Kokila Italic","Lao UI","Lao UI Bold","Latha","Latha Bold","Leelawadee","Leelawadee Bold","Levenim MT","Levenim MT Bold","LilyUPC","LilyUPC Bold","LilyUPC Bold Italic","LilyUPC Italic","Lucida Console","Lucida Sans Unicode","MS Gothic","MS Mincho","MS PGothic","MS PMincho","MS UI Gothic","MV Boli","Malgun Gothic","Malgun Gothic Bold","Mangal","Mangal Bold","Marlett","Meiryo","Meiryo Bold","Meiryo Bold Italic","Meiryo Italic","Meiryo UI","Meiryo UI Bold","Meiryo UI Bold Italic","Meiryo UI Italic","Microsoft Himalaya","Microsoft JhengHei","Microsoft JhengHei Bold","Microsoft New Tai Lue","Microsoft New Tai Lue Bold","Microsoft PhagsPa","Microsoft PhagsPa Bold","Microsoft Sans Serif","Microsoft Tai Le","Microsoft Tai Le Bold","Microsoft Uighur","Microsoft YaHei","Microsoft YaHei Bold","Microsoft Yi Baiti","MingLiU","MingLiU-ExtB","MingLiU_HKSCS","MingLiU_HKSCS-ExtB","Miriam","Miriam Fixed","Miriam Transparent","Mongolian Baiti","MoolBoran","NSimSun","Narkisim","Nyala","PMingLiU","PMingLiU-ExtB","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Plantagenet Cherokee","Raavi","Raavi Bold","Rod","Rod Transparent","Sakkal Majalla","Sakkal Majalla Bold","Segoe Print","Segoe Print Bold","Segoe Script","Segoe Script Bold","Segoe UI","Segoe UI Bold","Segoe UI Bold Italic","Segoe UI Italic","Segoe UI Light","Segoe UI Semibold","Segoe UI Symbol","Shonar Bangla","Shonar Bangla Bold","Shruti","Shruti Bold","SimHei","SimSun","SimSun-ExtB","Simplified Arabic","Simplified Arabic Bold","Simplified Arabic Fixed","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Traditional Arabic","Traditional Arabic Bold","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Tunga Bold","Utsaah","Utsaah Bold","Utsaah Bold Italic","Utsaah Italic","Vani","Vani Bold","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Vijaya","Vijaya Bold","Vrinda","Vrinda Bold","Webdings","Wingdings"]
@@ -180,7 +181,7 @@
 			"aliases": {
 				"monospace": "Courier New",
 				"cursive": "Comic Sans MS",
-				"fantasy": "Gabriola",
+				"fantasy": "",
 				"sans-serif": "Arial",
 				"serif": "Times New Roman",
 				"helvetica": "Arial",
@@ -190,14 +191,15 @@
 			},
 			"exceptions": {
 				"__default": {
-					"Internet Explorer 10": "Batang"
+					"Batang": { "Internet Explorer": "10" }
 				},
 				"monospace": {
-					"Chrome 37, Opera 24": "Consolas"
+					"Consolas": { "Chrome": "37", "Opera": "24" }
 				},
 				"fantasy": {
-					"Chrome 37, Opera 24": "Impact",
-					"Firefox 32": "Microsoft Sans Serif"
+					"Gabriola": { "Internet Explorer": "10" },
+					"Impact": { "Chrome": "37", "Opera": "24" },
+					"Microsoft Sans Serif": { "Firefox": "32" }
 				}
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Aharoni Bold","Aldhabi","Andalus","Angsana New","Angsana New Bold","Angsana New Bold Italic","Angsana New Italic","AngsanaUPC","AngsanaUPC Bold","AngsanaUPC Bold Italic","AngsanaUPC Italic","Aparajita","Aparajita Bold","Aparajita Bold Italic","Aparajita Italic","Arabic Transparent","Arabic Transparent Bold","Arabic Typesetting","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Batang","BatangChe","Browallia New","Browallia New Bold","Browallia New Bold Italic","Browallia New Italic","BrowalliaUPC","BrowalliaUPC Bold","BrowalliaUPC Bold Italic","BrowalliaUPC Italic","Calibri","Calibri Bold","Calibri Bold Italic","Calibri Italic","Calibri Light","Calibri Light Italic","Cambria","Cambria Bold","Cambria Bold Italic","Cambria Italic","Cambria Math","Candara","Candara Bold","Candara Bold Italic","Candara Italic","Comic Sans MS","Comic Sans MS Bold","Comic Sans MS Bold Italic","Comic Sans MS Italic","Consolas","Consolas Bold","Consolas Bold Italic","Consolas Italic","Constantia","Constantia Bold","Constantia Bold Italic","Constantia Italic","Corbel","Corbel Bold","Corbel Bold Italic","Corbel Italic","Cordia New","Cordia New Bold","Cordia New Bold Italic","Cordia New Italic","CordiaUPC","CordiaUPC Bold","CordiaUPC Bold Italic","CordiaUPC Italic","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","DFKai-SB","DaunPenh","David","David Bold","David Transparent","DilleniaUPC","DilleniaUPC Bold","DilleniaUPC Bold Italic","DilleniaUPC Italic","DokChampa","Dotum","DotumChe","Ebrima","Ebrima Bold","Estrangelo Edessa","EucrosiaUPC","EucrosiaUPC Bold","EucrosiaUPC Bold Italic","EucrosiaUPC Italic","Euphemia","FangSong","Fixed Miriam Transparent","FrankRuehl","Franklin Gothic Medium","Franklin Gothic Medium Italic","FreesiaUPC","FreesiaUPC Bold","FreesiaUPC Bold Italic","FreesiaUPC Italic","Gabriola","Gadugi","Gadugi Bold","Gautami","Gautami Bold","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Gisha","Gisha Bold","Gulim","GulimChe","Gungsuh","GungsuhChe","Helvetica","Impact","IrisUPC","IrisUPC Bold","IrisUPC Bold Italic","IrisUPC Italic","Iskoola Pota","Iskoola Pota Bold","JasmineUPC","JasmineUPC Bold","JasmineUPC Bold Italic","JasmineUPC Italic","KaiTi","Kalinga","Kalinga Bold","Kartika","Kartika Bold","Khmer UI","Khmer UI Bold","KodchiangUPC","KodchiangUPC Bold","KodchiangUPC Bold Italic","KodchiangUPC Italic","Kokila","Kokila Bold","Kokila Bold Italic","Kokila Italic","Lao UI","Lao UI Bold","Latha","Latha Bold","Leelawadee","Leelawadee Bold","Levenim MT","Levenim MT Bold","LilyUPC","LilyUPC Bold","LilyUPC Bold Italic","LilyUPC Italic","Lucida Console","Lucida Sans Unicode","MS Gothic","MS Mincho","MS PGothic","MS PMincho","MS UI Gothic","MV Boli","Malgun Gothic","Malgun Gothic Bold","Mangal","Mangal Bold","Marlett","Meiryo","Meiryo Bold","Meiryo Bold Italic","Meiryo Italic","Meiryo UI","Meiryo UI Bold","Meiryo UI Bold Italic","Meiryo UI Italic","Microsoft Himalaya","Microsoft JhengHei","Microsoft JhengHei Bold","Microsoft JhengHei UI","Microsoft JhengHei UI Bold","Microsoft New Tai Lue","Microsoft New Tai Lue Bold","Microsoft PhagsPa","Microsoft PhagsPa Bold","Microsoft Sans Serif","Microsoft Tai Le","Microsoft Tai Le Bold","Microsoft Uighur","Microsoft Uighur Bold","Microsoft YaHei","Microsoft YaHei Bold","Microsoft YaHei UI","Microsoft YaHei UI Bold","Microsoft Yi Baiti","MingLiU","MingLiU-ExtB","MingLiU_HKSCS","MingLiU_HKSCS-ExtB","Miriam","Miriam Fixed","Miriam Transparent","Mongolian Baiti","MoolBoran","Myanmar Text","NSimSun","Narkisim","Nirmala UI","Nirmala UI Bold","Nyala","PMingLiU","PMingLiU-ExtB","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Plantagenet Cherokee","Raavi","Raavi Bold","Rod","Rod Transparent","Sakkal Majalla","Sakkal Majalla Bold","Segoe Print","Segoe Print Bold","Segoe Script","Segoe Script Bold","Segoe UI","Segoe UI Bold","Segoe UI Bold Italic","Segoe UI Italic","Segoe UI Light","Segoe UI Light Italic","Segoe UI Semibold","Segoe UI Semibold Italic","Segoe UI Semilight","Segoe UI Semilight Italic","Segoe UI Symbol","Shonar Bangla","Shonar Bangla Bold","Shruti","Shruti Bold","SimHei","SimSun","SimSun-ExtB","Simplified Arabic","Simplified Arabic Bold","Simplified Arabic Fixed","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Traditional Arabic","Traditional Arabic Bold","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Tunga Bold","Urdu Typesetting","Utsaah","Utsaah Bold","Utsaah Bold Italic","Utsaah Italic","Vani","Vani Bold","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Vijaya","Vijaya Bold","Vrinda","Vrinda Bold","Webdings","Wingdings"]
@@ -211,7 +213,7 @@
 			"aliases": {
 				"monospace": "Courier New",
 				"cursive": "Comic Sans MS",
-				"fantasy": "Gabriola",
+				"fantasy": "",
 				"sans-serif": "Arial",
 				"serif": "Times New Roman",
 				"helvetica": "Arial",
@@ -221,11 +223,12 @@
 			},
 			"exceptions": {
 				"monospace": {
-					"Chrome 37, Opera 24": "Consolas"
+					"Consolas": { "Chrome": "37", "Opera": "24" }
 				},
 				"fantasy": {
-					"Chrome 37, Opera 24": "Impact",
-					"Firefox 32": "Microsoft Sans Serif"
+					"Gabriola": { "Internet Explorer": "11" },
+					"Impact": { "Chrome": "37", "Opera": "24" },
+					"Microsoft Sans Serif": { "Firefox": "32" }
 				}
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Aharoni Bold","Aldhabi","Andalus","Angsana New","Angsana New Bold","Angsana New Bold Italic","Angsana New Italic","AngsanaUPC","AngsanaUPC Bold","AngsanaUPC Bold Italic","AngsanaUPC Italic","Aparajita","Aparajita Bold","Aparajita Bold Italic","Aparajita Italic","Arabic Transparent","Arabic Transparent Bold","Arabic Typesetting","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Batang","BatangChe","Browallia New","Browallia New Bold","Browallia New Bold Italic","Browallia New Italic","BrowalliaUPC","BrowalliaUPC Bold","BrowalliaUPC Bold Italic","BrowalliaUPC Italic","Calibri","Calibri Bold","Calibri Bold Italic","Calibri Italic","Calibri Light","Calibri Light Italic","Cambria","Cambria Bold","Cambria Bold Italic","Cambria Italic","Cambria Math","Candara","Candara Bold","Candara Bold Italic","Candara Italic","Comic Sans MS","Comic Sans MS Bold","Comic Sans MS Bold Italic","Comic Sans MS Italic","Consolas","Consolas Bold","Consolas Bold Italic","Consolas Italic","Constantia","Constantia Bold","Constantia Bold Italic","Constantia Italic","Corbel","Corbel Bold","Corbel Bold Italic","Corbel Italic","Cordia New","Cordia New Bold","Cordia New Bold Italic","Cordia New Italic","CordiaUPC","CordiaUPC Bold","CordiaUPC Bold Italic","CordiaUPC Italic","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","DFKai-SB","DaunPenh","David","David Bold","David Transparent","DilleniaUPC","DilleniaUPC Bold","DilleniaUPC Bold Italic","DilleniaUPC Italic","DokChampa","Dotum","DotumChe","Ebrima","Ebrima Bold","Estrangelo Edessa","EucrosiaUPC","EucrosiaUPC Bold","EucrosiaUPC Bold Italic","EucrosiaUPC Italic","Euphemia","FangSong","Fixed Miriam Transparent","FrankRuehl","Franklin Gothic Medium","Franklin Gothic Medium Italic","FreesiaUPC","FreesiaUPC Bold","FreesiaUPC Bold Italic","FreesiaUPC Italic","Gabriola","Gadugi","Gadugi Bold","Gautami","Gautami Bold","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Gisha","Gisha Bold","Gulim","GulimChe","Gungsuh","GungsuhChe","Helvetica","Impact","IrisUPC","IrisUPC Bold","IrisUPC Bold Italic","IrisUPC Italic","Iskoola Pota","Iskoola Pota Bold","JasmineUPC","JasmineUPC Bold","JasmineUPC Bold Italic","JasmineUPC Italic","KaiTi","Kalinga","Kalinga Bold","Kartika","Kartika Bold","Khmer UI","Khmer UI Bold","KodchiangUPC","KodchiangUPC Bold","KodchiangUPC Bold Italic","KodchiangUPC Italic","Kokila","Kokila Bold","Kokila Bold Italic","Kokila Italic","Lao UI","Lao UI Bold","Latha","Latha Bold","Leelawadee","Leelawadee Bold","Levenim MT","Levenim MT Bold","LilyUPC","LilyUPC Bold","LilyUPC Bold Italic","LilyUPC Italic","Lucida Console","Lucida Sans Unicode","MS Gothic","MS Mincho","MS PGothic","MS PMincho","MS UI Gothic","MV Boli","Malgun Gothic","Malgun Gothic Bold","Mangal","Mangal Bold","Marlett","Meiryo","Meiryo Bold","Meiryo Bold Italic","Meiryo Italic","Meiryo UI","Meiryo UI Bold","Meiryo UI Bold Italic","Meiryo UI Italic","Microsoft Himalaya","Microsoft JhengHei","Microsoft JhengHei Bold","Microsoft JhengHei UI","Microsoft JhengHei UI Bold","Microsoft New Tai Lue","Microsoft New Tai Lue Bold","Microsoft PhagsPa","Microsoft PhagsPa Bold","Microsoft Sans Serif","Microsoft Tai Le","Microsoft Tai Le Bold","Microsoft Uighur","Microsoft Uighur Bold","Microsoft YaHei","Microsoft YaHei Bold","Microsoft YaHei UI","Microsoft YaHei UI Bold","Microsoft Yi Baiti","MingLiU","MingLiU-ExtB","MingLiU_HKSCS","MingLiU_HKSCS-ExtB","Miriam","Miriam Fixed","Miriam Transparent","Mongolian Baiti","MoolBoran","Myanmar Text","NSimSun","Narkisim","Nirmala UI","Nirmala UI Bold","Nyala","PMingLiU","PMingLiU-ExtB","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Plantagenet Cherokee","Raavi","Raavi Bold","Rod","Rod Transparent","Sakkal Majalla","Sakkal Majalla Bold","Segoe Print","Segoe Print Bold","Segoe Script","Segoe Script Bold","Segoe UI","Segoe UI Bold","Segoe UI Bold Italic","Segoe UI Italic","Segoe UI Light","Segoe UI Light Italic","Segoe UI Semibold","Segoe UI Semibold Italic","Segoe UI Semilight","Segoe UI Semilight Italic","Segoe UI Symbol","Shonar Bangla","Shonar Bangla Bold","Shruti","Shruti Bold","SimHei","SimSun","SimSun-ExtB","Simplified Arabic","Simplified Arabic Bold","Simplified Arabic Fixed","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Traditional Arabic","Traditional Arabic Bold","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Tunga Bold","Urdu Typesetting","Utsaah","Utsaah Bold","Utsaah Bold Italic","Utsaah Italic","Vani","Vani Bold","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Vijaya","Vijaya Bold","Vrinda","Vrinda Bold","Webdings","Wingdings"]
