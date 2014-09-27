@@ -9,8 +9,7 @@ TODO:
 * Blackberry OS 6
 * Blackberry OS 7
 * Blackberry OS 10
-* Add OS-level list of all available fonts.
-* Add a11y to tables
+* Add a11y to tables, legend for colors (alternative to colors)
 * Add logo
 
 

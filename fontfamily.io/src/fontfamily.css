@@ -110,7 +110,9 @@ button {
 	right: .4em;
 }
 .note {
+	margin: 1em auto;
 	font-size: .8125em;
+	max-width: 38em;
 }
 
 @media ( min-width: 27em ) {

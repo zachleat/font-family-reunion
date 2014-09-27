@@ -46,8 +46,8 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 				<li><code>font-family: Andale Mono, monospace</code></li>
 			</ul>
 		</p> -->
-		<p class="note">Per the specification, font-family names are case insensitive.</p>
-		<p class="note">*** signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
+		<p class="note"><strong>Examples</strong>: <a href="/">(none set)</a> <a href="/sans-serif">sans-serif</a> <a href="/fantasy">fantasy</a> <a href="/cursive">cursive</a> <a href="/Andale_Mono,monospace">Andale Mono, monospace</a></p>
+		<p class="note">Per the specification, font-family names are case insensitive. <code>***</code> signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
 
 	</form>
 	<div class="results">
