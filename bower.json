@@ -6,7 +6,6 @@
     "Zach Leatherman <zachleatherman@gmail.com>"
   ],
   "description": "A caniuse for font-family, reports available default fonts on different operating systems.",
-  "main": "lib/fontfaceonload.js",
   "keywords": [
     "font",
     "type",
@@ -18,8 +17,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/bower_components",
-    "test",
-    "tests"
-  ]
+  ],
+  "devDependencies": {
+  	"jquery": ">=1.9.1"
+  }
 }
