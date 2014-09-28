@@ -334,6 +334,22 @@
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Baskerville","Courier","Courier New","Droid Sans","fantasy","Georgia","Helvetica","ITC Stone Serif","Monaco","Palatino","sans-serif-light","sans-serif-thin","sans-serif-condensed","Tahoma","Times","Times New Roman","Verdana"]
 		},
 		{
+			"ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900)",
+			"os": "Windows",
+			"version": "Phone 7.5",
+			"shortcode": "win-phone-7-5",
+			"notes": "LG Optimus 7",
+			"aliases": {
+				"cursive": "Comic Sans MS",
+				"monospace": "Courier New",
+				"fantasy": "Georgia",
+				"sans-serif": "Arial",
+				"serif": "Times New Roman",
+				"__default": "Segoe UI"
+			},
+			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Arial Black","Avenir Next Condensed Demi Bold","Calibri","Comic Sans MS","Courier New","Georgia","Lucida Sans Unicode","Malgun Gothic","Meiryo UI","Microsoft YaHei","Segoe UI","Segoe UI Symbol","Tahoma","Times New Roman","Trebuchet MS","Verdana","Webdings","Wingdings"]
+		},
+		{
 			"ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520)",
 			"os": "Windows",
 			"version": "Phone 8.0",
@@ -347,7 +363,7 @@
 				"serif": "Times New Roman",
 				"__default": "Segoe UI"
 			},
-			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Avenir Next Condensed Demi Bold","Calibri","Cambria","Cambria Math","Comic Sans MS","Courier New","Ebrima","Estrangelo Edessa","Gadugi","Georgia","Khmer UI","Lao UI","Leelawadee","Lucida Console","Lucida Sans Unicode","MV Boli","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Uighur","Microsoft Yi Baiti","Mongolian Baiti","NSimSun","Nirmala UI","sans-serif","serif","Segoe UI","Segoe UI Symbol","SimSun","Tahoma","Times New Roman","Trebuchet MS","Urdu Typesetting","Verdana","Webdings","Wingdings"]
+			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Avenir Next Condensed Demi Bold","Calibri","Cambria","Cambria Math","Comic Sans MS","Courier New","Ebrima","Estrangelo Edessa","Gadugi","Georgia","Khmer UI","Lao UI","Leelawadee","Lucida Console","Lucida Sans Unicode","MV Boli","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Uighur","Microsoft Yi Baiti","Mongolian Baiti","NSimSun","Nirmala UI","Segoe UI","Segoe UI Symbol","SimSun","Tahoma","Times New Roman","Trebuchet MS","Urdu Typesetting","Verdana","Webdings","Wingdings"]
 		}
 	]
 }
