@@ -1,0 +1,20 @@
+{
+  "name": "font-family-reunion",
+  "version": "0.0.0",
+  "description": "A caniuse for font-family, reports available default fonts on different operating systems.",
+  "author": "Zach Leatherman <zachleatherman@gmail.com> (http://www.zachleat.com/web/)",
+  "main": "lib/fontfaceonload.js",
+  "homepage": "https://github.com/zachleat/font-family-reunion",
+  "repository": "git://github.com/zachleat/font-family-reunion.git",
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "font",
+    "type",
+    "typeface",
+    "test"
+  ],
+}
