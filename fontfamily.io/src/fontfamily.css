@@ -297,6 +297,7 @@ button {
 .icon-finder:before {
 	content: "\e602";
 }
+.icon-android-4-2-2:before,
 .icon-android-4-4:before,
 .icon-android:before {
 	content: "\e603";

@@ -302,9 +302,38 @@
 			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM", ".Times LT MM", "Al Nile", "American Typewriter", "Apple Color Emoji", "Apple SD Gothic Neo", "AppleGothic", "Arial", "Arial Hebrew", "Arial Rounded MT Bold", "Arial Unicode MS", "Avenir", "Avenir Black", "Avenir Black Oblique", "Avenir Book", "Avenir Heavy", "Avenir Light", "Avenir Medium", "Avenir Next", "Avenir Next Condensed", "Avenir Next Condensed Demi Bold", "Avenir Next Condensed Heavy", "Avenir Next Condensed Medium", "Avenir Next Condensed Ultra Light", "Avenir Next Demi Bold", "Avenir Next Heavy", "Avenir Next Medium", "Avenir Next Ultra Light", "Bangla Sangam MN", "Baskerville", "Bodoni Ornaments", "Chalkboard SE", "Chalkduster", "Cochin", "Copperplate", "Courier", "Courier New", "DB LCD Temp", "DIN Alternate", "DIN Condensed", "Damascus", "Devanagari Sangam MN", "Didot", "Euphemia UCAS", "Farah", "Futura", "Geeza Pro", "Georgia", "Gill Sans", "Gujarati Sangam MN", "Gurmukhi MN", "Heiti SC", "Heiti TC", "Helvetica", "Helvetica Bold", "Helvetica Bold Oblique", "Helvetica Light", "Helvetica Neue", "Helvetica Neue Bold Italic", "Helvetica Neue Light Italic", "Helvetica Oblique", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic ProN W3", "Hiragino Kaku Gothic ProN W6", "Hiragino Mincho Pro", "Hiragino Mincho ProN", "Hiragino Mincho ProN W3", "Hiragino Mincho ProN W6", "Hoefler Text", "Iowan Old Style", "Kailasa", "Kannada Sangam MN", "LastResort", "Malayalam Sangam MN", "Marion", "Marker Felt", "Menlo", "Mishafi", "Noteworthy", "Optima", "Oriya Sangam MN", "Palatino", "Papyrus", "Savoye LET", "Sinhala Sangam MN", "Snell Roundhand", "Superclarendon", "Symbol", "Tamil Sangam MN", "Telugu Sangam MN", "Thonburi", "Times", "Times New Roman", "Trebuchet MS", "Verdana", "Zapf Dingbats", "Zapfino"]
 		},
 		{
+			"ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; GT-I8200L Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+			"os": "Android",
+			"version": "Jelly Bean 4.2.2",
+			"shortcode": "android-4-2-2",
+			"notes": "Samsung Galaxy SIII Mini",
+			"aliases": {
+				"__default": "Droid Sans",
+				"arial": "Droid Sans",
+				"helvetica": "Droid Sans",
+				"sans-serif": "Droid Sans",
+				"tahoma": "Droid Sans",
+				"verdana": "Droid Sans",
+				"monospace": "Droid Sans Mono***",
+				"courier": "Droid Sans Mono***",
+				"courier new": "Droid Sans Mono***",
+				"monaco": "Droid Sans Mono***",
+				"baskerville": "Droid Serif***",
+				"cursive": "Droid Serif***",
+				"fantasy": "Droid Serif***",
+				"goudy": "Droid Serif***",
+				"itc stone serif": "Droid Serif***",
+				"palatino": "Droid Serif***",
+				"serif": "Droid Serif***",
+				"times": "Droid Serif***",
+				"times new roman": "Droid Serif***"
+			},
+			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Baskerville","Courier","Courier New","Droid Sans","Georgia","Goudy","Helvetica","ITC Stone Serif","Monaco","Palatino","sans-serif-condensed","sans-serif-light","sans-serif-thin","Tahoma","Times","Times New Roman","Verdana"]
+		},
+		{
 			"ua": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T230NU Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36",
-			"os": "Android KitKat",
-			"version": "4.4.2",
+			"os": "Android",
+			"version": "KitKat 4.4.2",
 			"shortcode": "android-4-4",
 			"notes": "Samsung Galaxy Tab 4",
 			"aliases": {
