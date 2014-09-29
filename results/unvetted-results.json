@@ -1,0 +1,31 @@
+		{
+			"ua": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36",
+			"os": "Windows",
+			"version": "Vista (NT 6.0)",
+			"shortcode": "win-vista",
+			"notes": "Modern.ie Virtual Machine",
+			"aliases": {
+				"cursive": "(Not yet available)",
+				"fantasy": "(Not yet available)",
+				"monospace": "(Not yet available)",
+				"sans-serif": "Arial",
+				"serif": "Times New Roman",
+				"helvetica": "Arial",
+				"times": "Times New Roman",
+				"courier": "Courier New",
+				"__default": "Times New Roman"
+			},
+			"families": ["cursive","fantasy","monospace","sans-serif","serif","Aharoni Bold","Andalus","Angsana New","Angsana New Bold","Angsana New Bold Italic","Angsana New Italic","AngsanaUPC","AngsanaUPC Bold","AngsanaUPC Bold Italic","AngsanaUPC Italic","Arabic Transparent","Arabic Transparent Bold","Arabic Typesetting","Arial","Arial Black","Arial Bold","Arial Bold Italic","Arial Italic","Batang","BatangChe","Browallia New","Browallia New Bold","Browallia New Bold Italic","Browallia New Italic","BrowalliaUPC","BrowalliaUPC Bold","BrowalliaUPC Bold Italic","BrowalliaUPC Italic","Calibri","Calibri Bold","Calibri Bold Italic","Calibri Italic","Cambria","Cambria Bold","Cambria Bold Italic","Cambria Italic","Cambria Math","Candara","Candara Bold","Candara Bold Italic","Candara Italic","Comic Sans MS","Comic Sans MS Bold","Consolas","Consolas Bold","Consolas Bold Italic","Consolas Italic","Constantia","Constantia Bold","Constantia Bold Italic","Constantia Italic","Corbel","Corbel Bold","Corbel Bold Italic","Corbel Italic","Cordia New","Cordia New Bold","Cordia New Bold Italic","Cordia New Italic","CordiaUPC","CordiaUPC Bold","CordiaUPC Bold Italic","CordiaUPC Italic","Courier","Courier New","Courier New Bold","Courier New Bold Italic","Courier New Italic","DFKai-SB","DaunPenh","David","David Bold","David Transparent","DilleniaUPC","DilleniaUPC Bold","DilleniaUPC Bold Italic","DilleniaUPC Italic","DokChampa","Dotum","DotumChe","Estrangelo Edessa","EucrosiaUPC","EucrosiaUPC Bold","EucrosiaUPC Bold Italic","EucrosiaUPC Italic","Euphemia","FangSong","Fixed Miriam Transparent","FrankRuehl","Franklin Gothic Medium","Franklin Gothic Medium Italic","FreesiaUPC","FreesiaUPC Bold","FreesiaUPC Bold Italic","FreesiaUPC Italic","Gautami","Georgia","Georgia Bold","Georgia Bold Italic","Georgia Italic","Gisha","Gisha Bold","Gulim","GulimChe","Gungsuh","GungsuhChe","Helvetica","Impact","IrisUPC","IrisUPC Bold","IrisUPC Bold Italic","IrisUPC Italic","Iskoola Pota","JasmineUPC","JasmineUPC Bold","JasmineUPC Bold Italic","JasmineUPC Italic","KaiTi","Kalinga","Kartika","KodchiangUPC","KodchiangUPC Bold","KodchiangUPC Bold Italic","KodchiangUPC Italic","Latha","Leelawadee","Leelawadee Bold","Levenim MT","Levenim MT Bold","LilyUPC","LilyUPC Bold","LilyUPC Bold Italic","LilyUPC Italic","Lucida Console","Lucida Sans Unicode","MS Gothic","MS Mincho","MS PGothic","MS PMincho","MS UI Gothic","MV Boli","Malgun Gothic","Malgun Gothic Bold","Mangal","Marlett","Meiryo","Meiryo Bold","Meiryo Bold Italic","Meiryo Italic","Meiryo UI","Meiryo UI Bold","Meiryo UI Bold Italic","Meiryo UI Italic","Microsoft Himalaya","Microsoft JhengHei","Microsoft JhengHei Bold","Microsoft Sans Serif","Microsoft Uighur","Microsoft YaHei","Microsoft YaHei Bold","Microsoft Yi Baiti","MingLiU","MingLiU-ExtB","MingLiU_HKSCS","MingLiU_HKSCS-ExtB","Miriam","Miriam Fixed","Miriam Transparent","Mongolian Baiti","MoolBoran","NSimSun","Narkisim","Nyala","PMingLiU","PMingLiU-ExtB","Palatino Linotype","Palatino Linotype Bold","Palatino Linotype Bold Italic","Palatino Linotype Italic","Plantagenet Cherokee","Raavi","Rod","Rod Transparent","Segoe Print","Segoe Print Bold","Segoe Script","Segoe Script Bold","Segoe UI","Segoe UI Bold","Segoe UI Bold Italic","Segoe UI Italic","Shruti","SimHei","SimSun","SimSun-ExtB","Simplified Arabic","Simplified Arabic Bold","Simplified Arabic Fixed","Sylfaen","Symbol","Tahoma","Tahoma Bold","Times","Times New Roman","Times New Roman Bold","Times New Roman Bold Italic","Times New Roman Italic","Traditional Arabic","Traditional Arabic Bold","Trebuchet MS","Trebuchet MS Bold","Trebuchet MS Bold Italic","Trebuchet MS Italic","Tunga","Verdana","Verdana Bold","Verdana Bold Italic","Verdana Italic","Vrinda","Webdings","Wingdings"]
+		},
+		{
+			"ua": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.50 Mobile Safari/534.11+",
+			"os": "Blackberry",
+			"version": "6.1",
+			"shortcode": "blackberry-6-1",
+			"notes": "Blackberry 9810 Torch",
+			"aliases": {
+				"droid serif": "BBAlpha Sans",
+				"__default": "BBAlpha Sans"
+			},
+			"families": ["Andale Mono","Arial","Arial Black","BBAlpha Sans","Calibri","Candara","Comic Sans MS","Consolas","Courier","Courier New","Droid Sans","Droid Serif","Georgia","Helvetica","Impact","Symbol","Tahoma","Times","Times New Roman","Trebuchet MS","Verdana","Webdings","Wingdings","Wingdings 2","Wingdings 3"]
+		}
