@@ -135,6 +135,10 @@ button {
 	font-size: 1.25em;
 	vertical-align: text-bottom;
 }
+.results td + td [class^="icon-"],
+.results td + td [class*=" icon-"] {
+	vertical-align: text-top;
+}
 .results table {
 	/*opacity: .4;*/
 	width: 100%;
