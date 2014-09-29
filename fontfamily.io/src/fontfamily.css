@@ -23,7 +23,7 @@ h1, h2 {
 	text-align: center;
 }
 h1 {
-	font-size: 8.1vw;
+	font-size: 7.4vw;
 	margin-bottom: 0;
 }
 h2 {
@@ -53,7 +53,7 @@ h2 {
 :visited {
 	color: inherit;
 	text-decoration: none;
-	padding: .5em;
+	padding: .3em .5em;
 }
 :link:hover {
 	background-color: #e0d6c5;
@@ -234,13 +234,21 @@ button {
 		width: 35%;
 	}
 }
-
+.legend {
+	padding: .4em;
+	color: #fff;
+	font-size: .75em;
+}
+.legend.supported,
 .supported td + td {
 	background-color: #39B54A;
 }
+.legend.aliased,
 .aliased td + td {
 	background-color: #A8BD04;
 }
+.legend.fallback,
+.legend.unsupported,
 .fallback td + td,
 .unsupported td + td {
 	background-color: #C44230;
@@ -280,6 +288,15 @@ button {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-unsupported:before {
+	content: "\e60b";
+}
+.icon-supported:before {
+	content: "\e60c";
+}
+.icon-aliased:before {
+	content: "\e60d";
+}
 .icon-tux:before {
 	content: "\e600";
 }
