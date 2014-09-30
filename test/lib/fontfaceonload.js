@@ -13,7 +13,7 @@
 			timeout: 10000
 		},
 
-		defaultHtml = '<div style="white-space:nowrap;font-family:{1};position:absolute;top:0;left:0;font-size:48px;">{2}</div>',
+		defaultHtml = '<div style="white-space:nowrap;font-family:{1};position:absolute;top:0;left:-9999px;font-size:48px;">{2}</div>',
 		primary,
 		secondary,
 		dimensions;

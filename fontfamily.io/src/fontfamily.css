@@ -257,11 +257,11 @@ button {
 }
 
 @font-face {
-	font-family: 'icomoon';
-	src:url('icomoon/fonts/icomoon.eot?5zsouo');
-	src:url('icomoon/fonts/icomoon.eot?#iefix5zsouo') format('embedded-opentype'),
-		url('icomoon/fonts/icomoon.woff?5zsouo') format('woff'),
-		url('icomoon/fonts/icomoon.ttf?5zsouo') format('truetype');
+	font-family: icomoon;
+	src:url('icomoon/fonts/icomoon.eot');
+	src:url('icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('icomoon/fonts/icomoon.woff') format('woff'),
+		url('icomoon/fonts/icomoon.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -273,12 +273,7 @@ button {
 .icons-loaded [class^="icon-"],
 .icons-loaded [class*=" icon-"] {
 	display: inline;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
 	font-family: 'icomoon';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;

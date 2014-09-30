@@ -8,7 +8,7 @@
 		return;
 	}
 
-	FontFaceOnload( "My Custom Font Icon", {
+	FontFaceOnload( "icomoon", {
 		success: function() {
 			document.documentElement.className += " icons-loaded";
 		},
