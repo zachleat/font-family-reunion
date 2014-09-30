@@ -1,13 +1,3 @@
-TODO:
-* Android 2.3 (something is broken on fontfaceonload here)
-* Add default Blackberry fonts to list
-* Blackberry OS 6
-* Blackberry OS 7
-* Blackberry OS 10
-* Add a11y to tables, legend for colors (alternative to colors)
-* Add logo
-
-
 * Issues with * Bold (and etc) family names: http://stackoverflow.com/questions/11878088/firefox-not-recognizing-a-font
 * Iskoola Pota pretends it’s Times New Roman on Windows 8, 8.1 (higher unicode range font)
 
@@ -179,52 +169,6 @@ Stack overflow answers:
 	},
 	"families": []
 },
-
-// Sources:
-
-// *nix
-> fc-list
-
-// Mac OS X Mavericks
-http://support.apple.com/kb/HT5944
-
-// Mac OS X Snow Leopard
-http://support.apple.com/kb/HT5154
-
-// Windows:
-http://www.microsoft.com/typography/fonts/product.aspx
-
-// Windows 8
-http://www.microsoft.com/typography/fonts/product.aspx?PID=164
-
-// Windows 7
-http://www.microsoft.com/typography/fonts/product.aspx?PID=161
-
-// Windows Vista
-http://www.microsoft.com/typography/fonts/product.aspx?PID=149
-
-// Windows XP
-http://www.microsoft.com/typography/fonts/product.aspx?PID=135
-
-// Windows XP SP2
-http://www.microsoft.com/typography/fonts/product.aspx?PID=145
-
-// iOS 7
-http://support.apple.com/kb/HT5878
-
-// Android
-https://github.com/android/platform_frameworks_base/tree/master/data/fonts
-http://stackoverflow.com/questions/6809944/default-font-set-on-android
-https://developer.android.com/design/style/typography.html
-
-// Windows Phone (not very many good resources here)
-http://msdn.microsoft.com/en-us/library/ff806365%28v=vs.95%29.aspx
-
-// Blackberry
-http://stackoverflow.com/questions/775135/blackberry-font-family
-
-// Opera Mini (uses OS default)
-http://www.opera.com/help/mini/faq#squares
 
 JSON.stringify(Array.prototype.slice.call($0.querySelectorAll( "td:nth-child(2)" ) ).map(function(el) { return el.textContent }));
 
