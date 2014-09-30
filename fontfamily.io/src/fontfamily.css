@@ -112,7 +112,7 @@ button {
 .note {
 	margin: 1em auto;
 	font-size: .8125em;
-	max-width: 38em;
+	max-width: 39em;
 }
 
 @media ( min-width: 27em ) {
@@ -179,6 +179,9 @@ button {
 }
 .results table tbody td:first-child + td {
 	color: #fff;
+}
+.results td + td > span:first-child + .a11y-hidden + span {
+	padding-left: .5em;
 }
 .results .exception {
 	padding-left: 1em;
