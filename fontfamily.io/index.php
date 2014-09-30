@@ -40,12 +40,6 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 			<input type="text" id="families" name="families" value="<?php echo denormalizeFamily( $families ); ?>">
 			<button type="submit">Show</button>
 		</div>
-		<!-- <p>See more examples:
-			<ul>
-				<li><code>font-family: cursive</code></li>
-				<li><code>font-family: Andale Mono, monospace</code></li>
-			</ul>
-		</p> -->
 		<p class="note"><strong>Examples</strong>: <a href="/">(none set)</a> <a href="/sans-serif">sans-serif</a> <a href="/fantasy">fantasy</a> <a href="/cursive">cursive</a> <a href="/Andale_Mono,monospace">Andale Mono, monospace</a></p>
 		<p class="note">Per the specification, font-family names are case insensitive. <code>***</code> signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
 
