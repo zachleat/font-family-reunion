@@ -1,9 +1,6 @@
-SERVER:
-	Start mongodb> mongod
-	Start node.js> node db/index.js
-
 TODO:
 * Android 2.3 (something is broken on fontfaceonload here)
+* Add default Blackberry fonts to list
 * Blackberry OS 6
 * Blackberry OS 7
 * Blackberry OS 10
@@ -17,6 +14,7 @@ TODO:
 Notes:
 * Unicode Last Resort "LastResort" shows in Mac Chrome but not Firefox
 * "Webdings","Wingdings","Wingdings 2","Wingdings 3" Don’t show in Mac Chrome but does show in Firefox
+* Perhaps additional aliases on Windows Phone 7.5/8
 
 
 * default
