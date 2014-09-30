@@ -1,6 +1,6 @@
 <?php
 function sanitize( $str ) {
-	$str = preg_replace("/[\/\.]/", '', $str );
+	$str = preg_replace("/[\/\.\"\']/", '', $str );
 	$str = mb_convert_encoding($str, 'UTF-8', 'UTF-8');
 	$str = htmlentities($str, ENT_QUOTES, 'UTF-8');
 	return $str;

@@ -1,5 +1,6 @@
 ;(function( win, doc ) {
 
+	// remove trailing ?
 	if( "replaceState" in win.history ) {
 		win.history.replaceState( {}, "", win.location.href.replace( /\?[.]*/, '' ) );
 	}
@@ -17,7 +18,9 @@
 
 	var form = doc.getElementsByTagName( "form" )[ 0 ],
 		input = form.getElementsByTagName( "input" )[ 0 ],
-		commaWhitespaceRegex = /\s*,\s*/g;
+		commaWhitespaceRegex = /\s*,\s*/g,
+		underscoreRegex = /_/g,
+		quotesRegex = /[\'\"]/g;
 
 	function setFormAction() {
 		form.setAttribute( "action", "/" + normalizeFamily( this.value ) );
@@ -32,7 +35,7 @@
 		return val.replace( /(\s|\%20)/g, '_' );
 	}
 	function denormalizeFamily( val ) {
-		return val.replace( commaWhitespaceRegex, ', ' ).replace( /_/g, ' ' );
+		return val.replace( quotesRegex, '' ).replace( commaWhitespaceRegex, ', ' ).replace( underscoreRegex, ' ' );
 	}
 
 
