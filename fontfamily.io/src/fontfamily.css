@@ -61,6 +61,11 @@ h2 {
 .os-list :link {
 	display: block;
 }
+.avatar {
+	max-width: 28px;
+	margin-bottom: -8px;
+	margin-right: 4px;
+}
 
 /* Form */
 form {
