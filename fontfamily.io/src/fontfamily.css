@@ -165,14 +165,12 @@ button {
 }
 
 .results table thead,
-/*.results table tbody td:first-child,*/
-.results table .unsupported {
+.results table tbody .unsupported td + td {
 	pointer-events: none;
 	visibility: hidden;
 }
 .results table:first-child thead,
-/*.results table:first-child tbody td:first-child,*/
-.results table:first-child .unsupported {
+.results table:first-child tbody .unsupported td + td {
 	pointer-events: auto;
 	visibility: visible;
 }
@@ -241,7 +239,7 @@ button {
 .legend {
 	padding: .4em;
 	color: #fff;
-	font-size: .75em;
+	font-size: .6875em;
 }
 .legend.supported,
 .supported td + td {
