@@ -13,7 +13,18 @@
 				count++;
 			}
 			%>
-			<tr class="<% if( os.support ) { %>supported<% } %><% if( os.alias ) { %> aliased<% } %><% if( os.unsupported ) { %> unsupported<% } %><% if( os.fallback ) { %> fallback<% } %>">
+			<tr class="<% if( os.support ) {
+					%>supported<%
+				}
+				if( os.alias ) {
+					%> aliased<%
+				}
+				if( os.unsupported ) {
+					%> unsupported<%
+				}
+				if( os.fallback ) {
+					%> fallback<%
+				} %>">
 				<td><a href="os/<%= os.shortcode %>"><span class="icon-<%= os.shortcode %>" aria-hidden="true"></span><span class="a11y-hidden"><%= os.name %></span> <span class="version"><%= os.version %></span></a></td>
 				<td<% if( os.fontFamily && os.fontFamily[ 0 ] !== '(' && !os.exceptions ) { %> style="font-family: '<%= os.fontFamily %>'"<% } %><% if( count >= 3 ) { %> class="long-list"<% } %>>
 					<% if( os.support && !os.alias ) { %><span class="icon-supported" aria-hidden="true"></span><span class="a11y-hidden">Supported</span><% } %>
@@ -25,6 +36,11 @@
 						%><%= os.fontFamily %><%
 						if( os.exceptions ) { %></span><% }
 					}
+
+					if( !os.fontFamily && !os.exceptions ) {
+						%>no family or exceptions <%= typeof os.exceptions %> <%
+					}
+
 					if( os.exceptions ) {
 						var browsers;
 

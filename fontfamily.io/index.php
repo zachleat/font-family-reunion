@@ -40,9 +40,9 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 			<input type="text" id="families" name="families" value="<?php echo denormalizeFamily( $families ); ?>">
 			<button type="submit">Show</button>
 		</div>
-		<p class="note"><strong>Examples</strong>: <a href="/">(none set)</a> <a href="/sans-serif">sans-serif</a> <a href="/fantasy">fantasy</a> <a href="/cursive">cursive</a> <a href="/Andale_Mono,monospace">Andale Mono, monospace</a></p>
+		<p class="note"><strong>Examples</strong>: <a href="/">(none)</a> <a href="/serif">serif</a> <a href="/sans-serif">sans-serif</a> <a href="/fantasy">fantasy</a> <a href="/cursive">cursive</a> <a href="/Andale_Mono,monospace">Andale Mono, monospace</a></p>
 		<p class="note">Per the specification, font-family names are case insensitive. <code>***</code> signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
-		<p class="note"><em><a href="https://twitter.com/zachleat"><img src="/img/zachleat.png" alt="Avatar of @zachleat" class="avatar"> @zachleat</a></em></p>
+		<p class="note"><em><a href="https://twitter.com/zachleat"><img src="/img/zachleat.png" alt="Avatar of @zachleat" class="avatar"> @zachleat</a></em> <strong><a href="//www.zachleat.com/web/font-family-reunion/">Read more about fontfamily.io</a></strong></p>
 
 	</form>
 	<div class="results">

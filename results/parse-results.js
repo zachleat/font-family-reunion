@@ -12,7 +12,7 @@ results.families.forEach(function( family, osId ) {
 		shortcode: family.shortcode
 	};
 
-	if( family.aliases.__default ) {
+	if( family.aliases.__default || family.aliases.__default === "" ) {
 		if( !lookupTable[ "" ] ) {
 			lookupTable[ "" ] = {};
 		}
@@ -34,8 +34,6 @@ results.families.forEach(function( family, osId ) {
 	fs.writeFile( "../fontfamily.io/os/" + family.shortcode + ".html", data, function( error ) {
 		if( error ) {
 			console.log( 'os template error: ', error );
-		} else {
-			console.log( "os template success." );
 		}
 	});
 
@@ -74,6 +72,7 @@ FFRLookup.prototype.fetchSupport = function() {
 		var supportedFamily;
 		for( var osId in operatingSystems ) {
 			supportedFamily = lookupTable[ familyName ][ osId ];
+
 			if( !support[ osId ] && supportedFamily ) {
 				// console.log( 'match ', supportedFamily, ' on ', operatingSystems[ osId ] );
 				support[ osId ] = supportedFamily;
@@ -107,24 +106,26 @@ FFRLookup.prototype.toJSON = function() {
 		json = {},
 		os,
 		familyName,
-		useAlias;
+		useAlias,
+		support;
 	
 	for( var osId in this.support ) {
 		os = operatingSystems[ osId ];
 		useAlias = false;
-		familyName = this.support[ osId ] ? this.support[ osId ].fontFamily : "";
+		support = this.support[ osId ];
+		familyName = support ? support.fontFamily : "";
 
-		if( this.support[ osId ] && ( this.support[ osId ].alias || this.support[ osId ].alias === "" ) ) {
+		if( support && ( support.alias || support.alias === "" ) ) {
 			useAlias = true;
-			familyName = this.support[ osId ].alias;
+			familyName = support.alias;
 		}
 
 		arr.push({
-			support: !!( this.support[ osId ] && !this.support[ osId ].alias ),
+			support: !!( support && !useAlias ),
 			alias: useAlias,
-			unsupported: !this.support[ osId ],
-			fallback: !!( this.support[ osId ] && this.support[ osId ].fallback ),
-			exceptions: this.support[ osId ] && this.support[ osId ].exceptions,
+			unsupported: !support,
+			fallback: !!( support && support.fallback ),
+			exceptions: support ? support.exceptions : false,
 			shortcode: os.shortcode,
 			name: os.name,
 			version: os.version,
@@ -175,8 +176,6 @@ for( var familyName in lookupTable ) {
 	fs.writeFile( db.getFilePath(), data, function( error ) {
 		if( error ) {
 			console.log( 'template error: ', error );
-		} else {
-			console.log( "template success." );
 		}
 	});
 }

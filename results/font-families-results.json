@@ -374,6 +374,64 @@
 				"__default": "Segoe UI"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif","Arial","Avenir Next Condensed Demi Bold","Calibri","Cambria","Cambria Math","Comic Sans MS","Courier New","Ebrima","Estrangelo Edessa","Gadugi","Georgia","Khmer UI","Lao UI","Leelawadee","Lucida Console","Lucida Sans Unicode","MV Boli","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Uighur","Microsoft Yi Baiti","Mongolian Baiti","NSimSun","Nirmala UI","Segoe UI","Segoe UI Symbol","SimSun","Tahoma","Times New Roman","Trebuchet MS","Urdu Typesetting","Verdana","Webdings","Wingdings"]
+		},
+		{
+			"ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36",
+			"os": "Linux",
+			"version": "Ubuntu 14.04",
+			"shortcode": "ubuntu-14",
+			"notes": "VMWare Fusion Virtual Machine",
+			"aliases": {
+				"__default": "",
+				"fantasy": "",
+				"cursive": "",
+				"monospace": "DejaVu Sans Mono",
+				"serif": "",
+				"sans-serif": "",
+				"apple gothic": "",
+				"arial": "",
+				"helvetica": "",
+				"times": "",
+				"times new roman": ""
+			},
+			"exceptions": {
+				"__default": {
+					"Liberation Serif": { "Chrome": "37" },
+					"DejaVu Serif": { "Firefox": "28" }
+				},
+				"apple gothic": {
+					"DejaVu Sans": { "Firefox": "28" }
+				},
+				"sans-serif": {
+					"Liberation Sans": { "Chrome": "37" },
+					"DejaVu Sans": { "Firefox": "28" }
+				},
+				"arial": {
+					"Liberation Sans": { "Chrome": "37" }
+				},
+				"helvetica": {
+					"Liberation Sans": { "Chrome": "37" }
+				},
+				"serif": {
+					"Liberation Serif": { "Chrome": "37" },
+					"DejaVu Serif": { "Firefox": "28" }
+				},
+				"times": {
+					"Liberation Serif": { "Chrome": "37" }
+				},
+				"times new roman": {
+					"Liberation Serif": { "Chrome": "37" }
+				},
+				"fantasy": {
+					"(None available)": { "Chrome": "37" },
+					"DejaVu Sans": { "Firefox": "28" }
+				},
+				"cursive": {
+					"(None available)": { "Chrome": "37" },
+					"DejaVu Sans": { "Firefox": "28" }
+				}
+			},
+			"families": ["Abyssinica SIL","Arial","Bitstream Charter","Century Schoolbook L","Courier","Courier 10 Pitch","Courier New","DejaVu Sans","DejaVu Sans Mono","DejaVu Serif","Dingbats","Droid Arabic Naskh","Droid Sans","Droid Sans Armenian","Droid Sans Ethiopic","Droid Sans Fallback","Droid Sans Georgian","Droid Sans Hebrew","Droid Sans Japanese","Droid Sans Mono","Droid Sans Thai","Droid Serif","FreeMono","FreeSans","FreeSerif","Garuda","Helvetica","KacstArt","KacstBook","KacstDecorative","KacstDigital","KacstFarsi","KacstLetter","KacstNaskh","KacstOffice","KacstOne","KacstPen","KacstPoster","KacstQurn","KacstScreen","KacstTitle","KacstTitleL","Kedage","Khmer OS","Khmer OS System","Kinnari","LKLUG","Liberation Mono","Liberation Sans","Liberation Sans Narrow","Liberation Serif","Lohit Bengali","Lohit Devanagari","Lohit Gujarati","Lohit Punjabi","Lohit Tamil","Loma","Mallige","Meera","Mukti Narrow","NanumBarunGothic","NanumGothic","NanumMyeongjo","Nimbus Mono L","Nimbus Roman No9 L","Nimbus Sans L","Norasi","OpenSymbol","Padauk","Padauk Book","Phetsarath OT","Pothana2000","Purisa","Rachana","Rekha","Saab","Sawasdee","Standard Symbols L","Symbol","TakaoPGothic","Tibetan Machine Uni","Times","Times New Roman","Tlwg Typist","Tlwg Typo","TlwgMono","TlwgTypewriter","URW Bookman L","URW Chancery L","URW Gothic L","URW Palladio L","Ubuntu","Ubuntu Condensed","Ubuntu Light","Ubuntu Medium","Ubuntu Mono","Umpush","Vemana2000","Waree","Zapf Dingbats","gargi","monospace","mry_KacstQurn","ori1Uni","sans-serif","serif","utkal"]
 		}
 	]
 }

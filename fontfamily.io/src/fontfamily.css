@@ -117,7 +117,7 @@ button {
 .note {
 	margin: 1em auto;
 	font-size: .8125em;
-	max-width: 39em;
+	max-width: 42em;
 }
 
 @media ( min-width: 27em ) {
@@ -170,14 +170,18 @@ button {
 }
 
 .results table thead,
-.results table tbody .unsupported td + td {
+.results table tbody .unsupported td:first-child + td {
 	pointer-events: none;
-	visibility: hidden;
+	background: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+	border: 2px solid rgba(196,66,48,.8);
 }
 .results table:first-child thead,
 .results table:first-child tbody .unsupported td + td {
 	pointer-events: auto;
-	visibility: visible;
+	background: inherit;
+	color: inherit;
+	border: none;
 }
 .results table tbody td:first-child {
 	color: #787266;
@@ -302,6 +306,7 @@ button {
 .icon-aliased:before {
 	content: "\e60d";
 }
+.icon-ubuntu-14:before,
 .icon-tux:before {
 	content: "\e600";
 }
