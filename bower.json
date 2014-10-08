@@ -16,7 +16,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "bower_components"
   ],
   "devDependencies": {
   	"jquery": ">=1.9.1"
