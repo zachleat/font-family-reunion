@@ -2,10 +2,16 @@
 
 * Hosted at [fontfamily.io](http://fontfamily.io)
 
-## Running your own test
+## Initializing the repo
 
-1. `npm install`
-1. `bower install`
+`npm install`
+
+## Deploying the site
+
+1. Add a `fontfamily` host to `.ssh/config`
+1. Run `grunt deploy`
+
+## Running your own test
 
 ### Adding new default fonts to the test list
 
@@ -19,5 +25,7 @@ Add your `font-family` name to `test/src/font-families.json`, preferably in alph
 
 ## Generating the site
 
-`node results/parse-results.js` will generate the fontfamily.io web site from the results stored in `font-families-results.json`. The template is in `results/result.ejs`.
+`grunt generate`
+
+Or more explicitly, `node results/parse-results.js` will generate the fontfamily.io web site from the results stored in `font-families-results.json`. The template is in `results/result.ejs`.
 

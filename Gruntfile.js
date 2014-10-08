@@ -14,10 +14,20 @@ module.exports = function(grunt) {
 						cwd: 'fontfamily.io/'
 					}
 				}
+			},
+			generate: {
+				command: 'node parse-results.js',
+				options: {
+					stdout: true,
+					execOptions: {
+						cwd: 'results/'
+					}
+				}
 			}
 		}
 	});
 
 	// Upload to Production
-	grunt.registerTask('deploy', ['shell:upload']);
+	grunt.registerTask('generate', ['shell:generate']);
+	grunt.registerTask('deploy', ['generate', 'shell:upload']);
 };
