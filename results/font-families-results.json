@@ -432,6 +432,61 @@
 				}
 			},
 			"families": ["Abyssinica SIL","Arial","Bitstream Charter","Century Schoolbook L","Courier","Courier 10 Pitch","Courier New","DejaVu Sans","DejaVu Sans Mono","DejaVu Serif","Dingbats","Droid Arabic Naskh","Droid Sans","Droid Sans Armenian","Droid Sans Ethiopic","Droid Sans Fallback","Droid Sans Georgian","Droid Sans Hebrew","Droid Sans Japanese","Droid Sans Mono","Droid Sans Thai","Droid Serif","FreeMono","FreeSans","FreeSerif","Garuda","Helvetica","KacstArt","KacstBook","KacstDecorative","KacstDigital","KacstFarsi","KacstLetter","KacstNaskh","KacstOffice","KacstOne","KacstPen","KacstPoster","KacstQurn","KacstScreen","KacstTitle","KacstTitleL","Kedage","Khmer OS","Khmer OS System","Kinnari","LKLUG","Liberation Mono","Liberation Sans","Liberation Sans Narrow","Liberation Serif","Lohit Bengali","Lohit Devanagari","Lohit Gujarati","Lohit Punjabi","Lohit Tamil","Loma","Mallige","Meera","Mukti Narrow","NanumBarunGothic","NanumGothic","NanumMyeongjo","Nimbus Mono L","Nimbus Roman No9 L","Nimbus Sans L","Norasi","OpenSymbol","Padauk","Padauk Book","Phetsarath OT","Pothana2000","Purisa","Rachana","Rekha","Saab","Sawasdee","Standard Symbols L","Symbol","TakaoPGothic","Tibetan Machine Uni","Times","Times New Roman","Tlwg Typist","Tlwg Typo","TlwgMono","TlwgTypewriter","URW Bookman L","URW Chancery L","URW Gothic L","URW Palladio L","Ubuntu","Ubuntu Condensed","Ubuntu Light","Ubuntu Medium","Ubuntu Mono","Umpush","Vemana2000","Waree","Zapf Dingbats","gargi","monospace","mry_KacstQurn","ori1Uni","sans-serif","serif","utkal"]
+		},
+		{
+			"ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36",
+			"os": "Linux",
+			"version": "Fedora 20",
+			"shortcode": "fedora-20",
+			"notes": "VMWare Fusion Virtual Machine",
+			"aliases": {
+				"__default": "",
+				"fantasy": "",
+				"cursive": "",
+				"monospace": "DejaVu Sans Mono",
+				"serif": "",
+				"sans-serif": "",
+				"apple gothic": "",
+				"arial": "",
+				"helvetica": "",
+				"times": "",
+				"times new roman": ""
+			},
+			"exceptions": {
+				"__default": {
+					"Liberation Serif": { "Chrome": "38" },
+					"DejaVu Serif": { "Firefox": "25" }
+				},
+				"sans-serif": {
+					"Liberation Sans": { "Chrome": "38" },
+					"DejaVu Sans": { "Firefox": "25" }
+				},
+				"arial": {
+					"Liberation Sans": { "Chrome": "38" }
+				},
+				"helvetica": {
+					"Liberation Sans": { "Chrome": "38" }
+				},
+				"serif": {
+					"Liberation Serif": { "Chrome": "38" },
+					"DejaVu Serif": { "Firefox": "25" }
+				},
+				"times": {
+					"Liberation Serif": { "Chrome": "38" }
+				},
+				"times new roman": {
+					"Liberation Serif": { "Chrome": "38" }
+				},
+				"fantasy": {
+					"(None available)": { "Chrome": "38" },
+					"DejaVu Sans": { "Firefox": "25" }
+				},
+				"cursive": {
+					"(None available)": { "Chrome": "38" },
+					"DejaVu Sans": { "Firefox": "25" }
+				}
+			},
+			"families": ["AR PL UMing CN","AR PL UMing HK","AR PL UMing TW","AR PL UMing TW MBE","Abyssinica SIL","Arial","Bitstream Charter","Caladea","Calibri","Cambria","Cantarell","Carlito","Century Schoolbook L","Courier","Courier 10 Pitch","Courier New","Cursor","DejaVu Sans","DejaVu Sans Condensed","DejaVu Sans Light","DejaVu Sans Mono","DejaVu Serif","DejaVu Serif Condensed","Dingbats","Eeyek Unicode","Helvetica","Jomolhari","Khmer OS","Khmer OS Content","Khmer OS System","LKLUG","Liberation Mono","Liberation Sans","Liberation Serif","Lohit Assamese","Lohit Bengali","Lohit Devanagari","Lohit Gujarati","Lohit Kannada","Lohit Malayalam","Lohit Oriya","Lohit Punjabi","Lohit Tamil","Lohit Telugu","Meera","Mingzat","NanumGothic","NanumGothicExtraBold","Nimbus Mono L","Nimbus Roman No9 L","Nimbus Sans L","Noto Sans Lisu","Noto Sans Mandaic","Noto Sans Meetei Mayek","Noto Sans Tagalog","Noto Sans Tai Tham","Noto Sans Tai Viet","Nuosu SIL","OpenSymbol","PT Sans","PT Sans Narrow","Padauk","PakType Naqsh","Standard Symbols L","Symbol","Times","Times New Roman","URW Bookman L","URW Chancery L","URW Gothic L","URW Palladio L","Utopia","VL Gothic","Waree","WenQuanYi Zen Hei","WenQuanYi Zen Hei Mono","WenQuanYi Zen Hei Sharp","Zapf Dingbats","monospace","sans-serif","serif"]
 		}
 	]
 }

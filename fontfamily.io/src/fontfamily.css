@@ -307,6 +307,7 @@ button {
 	content: "\e60d";
 }
 .icon-ubuntu-14:before,
+.icon-fedora-20:before,
 .icon-tux:before {
 	content: "\e600";
 }
