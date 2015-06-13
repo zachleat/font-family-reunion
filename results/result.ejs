@@ -32,7 +32,7 @@
 					<% if( os.unsupported || os.fallback ) { %><span class="icon-unsupported" aria-hidden="true"></span><span class="a11y-hidden">unsupported</span><% } %>
 					<%
 					if( os.fontFamily ) {
-						if( os.exceptions ) { %><span><% }
+						if( os.exceptions ) { %><span class="has-exceptions"><% }
 						%><%= os.fontFamily %><%
 						if( os.exceptions ) { %></span><% }
 					}

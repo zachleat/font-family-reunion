@@ -187,7 +187,8 @@ button {
 .results table tbody td:first-child + td {
 	color: #fff;
 }
-.results td + td > span:first-child + .a11y-hidden + .exception {
+.results td + td > span:first-child + .a11y-hidden + .exception,
+.results td + td > span:first-child + .a11y-hidden + .has-exceptions {
 	padding-left: .5em;
 }
 .results .exception {
