@@ -3,7 +3,8 @@ var ejs = require('ejs'),
 	results = require( "./font-families-results.json" ),
 	operatingSystems = {},
 	shortCodes = {},
-	lookupTable = {};
+	lookupTable = {},
+	friendlyFontFamilyNames = {};
 
 results.families.forEach(function( family, osId ) {
 	operatingSystems[ osId ] = {
@@ -39,6 +40,7 @@ results.families.forEach(function( family, osId ) {
 
 	family.families.forEach(function( familyName ) {
 		var normalizedFamilyName = familyName.toLowerCase();
+		friendlyFontFamilyNames[ normalizedFamilyName ] = familyName;
 
 		if( !lookupTable[ normalizedFamilyName ] ) {
 			lookupTable[ normalizedFamilyName ] = {};
@@ -170,6 +172,7 @@ for( var familyName in lookupTable ) {
 	db = new FFRLookup( familyName );
 	data = ejs.render( template, {
 		slug: db.getFileName(),
+		familyName: friendlyFontFamilyNames[ familyName ],
 		operatingSystems: db.toJSON()
 	});
 

@@ -174,14 +174,12 @@ button {
 	pointer-events: none;
 	background: rgba(0,0,0,0);
 	color: rgba(0,0,0,0);
-	border: 2px solid rgba(196,66,48,.8);
 }
 .results table:first-child thead,
 .results table:first-child tbody .unsupported td + td {
 	pointer-events: auto;
 	background: inherit;
 	color: inherit;
-	border: none;
 }
 .results table tbody td:first-child {
 	color: #787266;
@@ -189,7 +187,7 @@ button {
 .results table tbody td:first-child + td {
 	color: #fff;
 }
-.results td + td > span:first-child + .a11y-hidden + span {
+.results td + td > span:first-child + .a11y-hidden + .exception {
 	padding-left: .5em;
 }
 .results .exception {
@@ -218,6 +216,23 @@ button {
 }
 .results table td > span {
 	font-size: .8125em; /* 13px */
+}
+.results table td > .aliased-from {
+	font: 11px sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+	padding-left: 1em;
+	color: rgba(255,255,255, .8);
+	white-space: nowrap;
+}
+.results table:first-child:nth-last-child(2) td > .aliased-from,
+.results table:first-child:nth-last-child(2) ~ table td > .aliased-from {
+	/* a11y-hidden */
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 .results table tr,

@@ -37,10 +37,6 @@
 						if( os.exceptions ) { %></span><% }
 					}
 
-					if( !os.fontFamily && !os.exceptions ) {
-						%>no family or exceptions <%= typeof os.exceptions %> <%
-					}
-
 					if( os.exceptions ) {
 						var browsers;
 
@@ -68,7 +64,11 @@
 							} %>
 							<%= j %></span><%
 						}
-					} %>
+					}
+					if( os.alias && !os.fallback ) {
+						%> <span class="aliased-from">aliased from <%= familyName %></span><%
+					}
+					%>
 				</td>
 			</tr>
 		<% }) %>
