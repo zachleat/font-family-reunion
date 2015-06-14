@@ -63,7 +63,7 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 			$path = "./results/" . toAscii( basename( $family ) ) . ".html";
 			if( file_exists( $path ) ) {
 				$files[] = $path;
-			} else {
+			} else if( !empty( $family ) ) {
 				$notfound[] = $family;
 			}
 		}
