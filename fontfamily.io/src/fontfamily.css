@@ -268,7 +268,16 @@ button {
 	padding: .4em;
 	color: #fff;
 	font-size: .6875em;
+	line-height: 160%;
 }
+p.legend {
+	font-size: .875em;
+	padding: .6em .8em;
+	margin: 2em auto;
+	text-align: center;
+	border: 2px solid #902F21;
+}
+
 .legend.supported,
 .supported td + td {
 	background-color: #39B54A;
@@ -282,6 +291,10 @@ button {
 .fallback td + td,
 .unsupported td + td {
 	background-color: #C44230;
+}
+.legend.unsupported :link,
+.legend.unsupported :link:hover {
+	background-color: #902F21;
 }
 
 @font-face {

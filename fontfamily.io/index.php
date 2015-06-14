@@ -45,26 +45,58 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 		<p class="note"><em><a href="https://twitter.com/zachleat"><img src="/img/zachleat.png" alt="Avatar of @zachleat" class="avatar"> @zachleat</a></em> <strong><a href="//www.zachleat.com/web/font-family-reunion/">Read more about fontfamily.io</a></strong></p>
 
 	</form>
-	<div class="results">
 <?php
+	$notfound = array();
+	$files = array();
+
 	if( $os ) {
-		$file = "./os/" . toAscii( basename( $os ) ) . ".html";
-		if( file_exists( $file ) ) {
-			include_once( $file );
+		$path = "./os/" . toAscii( basename( $os ) ) . ".html";
+		if( file_exists( $path ) ) {
+			$files[] = $path;
 		}
 	} else {
 		$families = explode( ",", $families );
 		$families = array_reverse( $families );
-		$files = array();
 		$files[] = "./defaults/default.html";
+
 		foreach( $families as $family ) {
-			$files[] = "./results/" . toAscii( basename( $family ) ) . ".html";
-		}
-		foreach( $files as $file ) {
-			if( file_exists( $file ) ) {
-				include( $file );
+			$path = "./results/" . toAscii( basename( $family ) ) . ".html";
+			if( file_exists( $path ) ) {
+				$files[] = $path;
+			} else {
+				$notfound[] = $family;
 			}
 		}
+	}
+
+	if( count( $notfound ) > 0 ):
+?>
+	<p class="legend unsupported"><span class="icon-unsupported" aria-hidden="true"></span>
+<?php
+	$notfound = array_reverse( $notfound );
+	$notfoundLength = count( $notfound );
+	foreach( $notfound as $j => $missingfont ) {
+		echo "<strong>" . denormalizeFamily( $missingfont ) . "</strong>";
+		if( $notfoundLength - 1 === $j ) {
+		} else if( $notfoundLength - 2 === $j ) {
+			echo ( $notfoundLength > 2 ? "," : "" ) . " and ";
+		} else {
+			echo ", ";
+		}
+	}
+	if( $notfoundLength !== 1 ) { 
+		echo " are unknown fonts ";
+	} else {
+		echo " is an unknown font ";
+	}
+?> to fontfamily.io. If this is a bug, please <a href="https://github.com/zachleat/font-family-reunion/issues/new">file an issue on GitHub</a>!</p>
+<?php
+	endif;
+?>
+	<div class="results">
+<?php
+	foreach( $files as $file ) {
+		include( $file );
 	}
 ?>
 	</div>
