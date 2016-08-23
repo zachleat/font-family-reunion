@@ -11,6 +11,7 @@ http://support.apple.com/kb/HT5154
 
 // Windows:
 http://www.microsoft.com/typography/fonts/product.aspx
+https://www.microsoft.com/typography/fonts/family.aspx
 
 // Windows 8
 http://www.microsoft.com/typography/fonts/product.aspx?PID=164
