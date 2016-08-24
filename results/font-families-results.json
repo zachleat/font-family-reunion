@@ -216,9 +216,9 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A403 Safari/8536.25",
-			"os": "iOS",
+			"os": "iOS-iPhone",
 			"version": "6.0",
-			"shortcode": "ios-6",
+			"shortcode": "ios-6-iphone",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -233,9 +233,9 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B141 Safari/8536.25",
-			"os": "iOS",
+			"os": "iOS-iPhone",
 			"version": "6.1",
-			"shortcode": "ios-6-1",
+			"shortcode": "ios-6-1-iphone",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -250,9 +250,9 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_3 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B508 Safari/9537.53",
-			"os": "iOS",
+			"os": "iOS-iPhone",
 			"version": "7.0.3",
-			"shortcode": "ios-7",
+			"shortcode": "ios-7-iphone",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -267,9 +267,9 @@
 		},
 		{
 			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D167 Safari/9537.53",
-			"os": "iOS",
+			"os": "iOS-iPhone",
 			"version": "7.1",
-			"shortcode": "ios-7-1",
+			"shortcode": "ios-7-1-iphone",
 			"notes": "XCode iPhone Simulator",
 			"aliases": {
 				"monospace": "Courier",
@@ -281,6 +281,23 @@
 				"__default": "Times"
 			},
 			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM", ".Times LT MM", "Al Nile", "American Typewriter", "Apple Color Emoji", "Apple SD Gothic Neo", "AppleGothic", "Arial", "Arial Hebrew", "Arial Rounded MT Bold", "Arial Unicode MS", "Avenir", "Avenir Black", "Avenir Black Oblique", "Avenir Book", "Avenir Heavy", "Avenir Light", "Avenir Medium", "Avenir Next", "Avenir Next Condensed", "Avenir Next Condensed Demi Bold", "Avenir Next Condensed Heavy", "Avenir Next Condensed Medium", "Avenir Next Condensed Ultra Light", "Avenir Next Demi Bold", "Avenir Next Heavy", "Avenir Next Medium", "Avenir Next Ultra Light", "Bangla Sangam MN", "Baskerville", "Bodoni Ornaments", "Chalkboard SE", "Chalkduster", "Cochin", "Copperplate", "Courier", "Courier New", "DB LCD Temp", "DIN Alternate", "DIN Condensed", "Damascus", "Devanagari Sangam MN", "Didot", "Euphemia UCAS", "Farah", "Futura", "Geeza Pro", "Georgia", "Gill Sans", "Gujarati Sangam MN", "Gurmukhi MN", "Heiti SC", "Heiti TC", "Helvetica", "Helvetica Bold", "Helvetica Bold Oblique", "Helvetica Light", "Helvetica Neue", "Helvetica Neue Bold Italic", "Helvetica Neue Light Italic", "Helvetica Oblique", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic ProN W3", "Hiragino Kaku Gothic ProN W6", "Hiragino Mincho Pro", "Hiragino Mincho ProN", "Hiragino Mincho ProN W3", "Hiragino Mincho ProN W6", "Hoefler Text", "Iowan Old Style", "Kailasa", "Kannada Sangam MN", "LastResort", "Malayalam Sangam MN", "Marion", "Marker Felt", "Menlo", "Mishafi", "Noteworthy", "Optima", "Oriya Sangam MN", "Palatino", "Papyrus", "Savoye LET", "Sinhala Sangam MN", "Snell Roundhand", "Superclarendon", "Symbol", "Tamil Sangam MN", "Telugu Sangam MN", "Thonburi", "Times", "Times New Roman", "Trebuchet MS", "Verdana", "Zapf Dingbats", "Zapfino"]
+		},
+		{
+			"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A405 Safari/600.1.4",
+			"os": "iOS-iPhone",
+			"version": "8.0",
+			"shortcode": "ios-8-0-iphone",
+			"notes": "Browserstack Real Device",
+			"aliases": {
+				"monospace": "Courier",
+				"cursive": "Snell Roundhand",
+				"fantasy": "Papyrus",
+				"sans-serif": "Helvetica",
+				"serif": "Times",
+				"times new roman": "Times",
+				"__default": "Times"
+			},
+			"families": ["cursive","fantasy","monospace","sans-serif","serif",".Helvetica LT MM",".Times LT MM","Al Nile","American Typewriter","Apple Color Emoji","Apple SD Gothic Neo","AppleGothic","Arial","Arial Hebrew","Arial Rounded MT Bold","Arial Unicode MS","Avenir","Avenir Black","Avenir Black Oblique","Avenir Book","Avenir Heavy","Avenir Light","Avenir Medium","Avenir Next","Avenir Next Condensed","Avenir Next Condensed Demi Bold","Avenir Next Condensed Heavy","Avenir Next Condensed Medium","Avenir Next Condensed Ultra Light","Avenir Next Demi Bold","Avenir Next Heavy","Avenir Next Medium","Avenir Next Ultra Light","Bangla Sangam MN","Baskerville","Bodoni Ornaments","Chalkboard SE","Chalkduster","Cochin","Copperplate","Courier","Courier New","DB LCD Temp","DIN Alternate","DIN Condensed","Damascus","Devanagari Sangam MN","Didot","Euphemia UCAS","Farah","Futura","Geeza Pro","Georgia","Gill Sans","Gujarati Sangam MN","Gurmukhi MN","Heiti SC","Heiti TC","Helvetica","Helvetica Bold","Helvetica Bold Oblique","Helvetica Light","Helvetica Neue","Helvetica Neue Bold Italic","Helvetica Neue Light Italic","Helvetica Oblique","Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic ProN W3","Hiragino Kaku Gothic ProN W6","Hiragino Mincho Pro","Hiragino Mincho ProN","Hiragino Mincho ProN W3","Hiragino Mincho ProN W6","Hoefler Text","Iowan Old Style","Kailasa","Kannada Sangam MN","Khmer Sangam MN","Kohinoor Devanagari","Lao Sangam MN","LastResort","Malayalam Sangam MN","Marion","Marker Felt","Menlo","Mishafi","Noteworthy","Optima","Oriya Sangam MN","Palatino","Papyrus","Savoye LET","Sinhala Sangam MN","Snell Roundhand","Superclarendon","Symbol","Tamil Sangam MN","Telugu Sangam MN","TeluguSangamMN","Thonburi","Times","Times New Roman","Trebuchet MS","Verdana","Zapf Dingbats","Zapfino"]
 		},
 		{
 			"ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; GT-I8200L Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
