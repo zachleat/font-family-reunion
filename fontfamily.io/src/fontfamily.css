@@ -158,15 +158,15 @@ button {
 }
 .results table td,
 .results table th {
-	padding: .4em .8em .4em .2em;
-	height: 2.4em;
+	padding: .375em .8125em .375em .1875em;
+	height: 2.375em;
 }
 .results table td:first-child + td {
 	height: 3.5em;
 }
 .results table td:first-child + td,
 .results table th:first-child + th {
-	padding-left: .8em;
+	padding-left: .8125em;
 }
 
 .results table thead,
@@ -387,4 +387,9 @@ p.legend {
 }
 .icon-safari:before {
 	content: "\e60a";
+}
+
+/* Font family exceptions */
+.results table#zapfino .supported td:first-child + td {
+	line-height: 2;
 }
