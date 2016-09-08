@@ -76,7 +76,7 @@
 // debugger;
 			}
 
-			function check( dims, el ) {
+			function isPossibleMatch( dims, el ) {
 				return appended && dimensions &&
 					( Math.abs( dims.width - el.offsetWidth ) > options.tolerance ||
 						Math.abs( dims.height - el.offsetHeight ) > options.tolerance );
@@ -85,10 +85,10 @@
 				doc.body.removeChild( parent );
 			}
 
-			if( check( dimensions.primary, primary ) ) {
+			if( isPossibleMatch( dimensions.primary, primary ) ) {
 				cleanup();
 				options.success();
-			} else if( check( dimensions.secondary, secondary ) ) {
+			} else if( isPossibleMatch( dimensions.secondary, secondary ) ) {
 				cleanup();
 				options.primaryMatch();
 				options.success();
