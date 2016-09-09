@@ -13,7 +13,7 @@ RedirectMatch 301 /os/ios-7-1$ /os/ios-7-1-iphone$1
 
 # OS lists
 RewriteCond %{REQUEST_URI} !\.(js|ico|gif|jpg|png|css)$
-RewriteRule ^os/([^\.]+)\.html$ /index.php?os=$1 [L]
+RewriteRule ^os/([^\.]+)(\.html)?$ /index.php?os=$1 [L]
 
 # Font Families
 RewriteCond %{REQUEST_URI} !\.(js|ico|gif|jpg|png|css)$
