@@ -226,15 +226,6 @@ button {
 	color: rgba(255,255,255, .8);
 	white-space: nowrap;
 }
-.results table:first-child:nth-last-child(2) td > .aliased-from,
-.results table:first-child:nth-last-child(2) ~ table td > .aliased-from {
-	/* a11y-hidden */
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-}
 
 .results table tr,
 .results table th,
@@ -355,6 +346,8 @@ p.legend {
 .icon-finder:before {
 	content: "\e602";
 }
+.icon-android-7-0:before,
+.icon-android-6-0:before,
 .icon-android-5-0:before,
 .icon-android-4-2-2:before,
 .icon-android-4-4:before,

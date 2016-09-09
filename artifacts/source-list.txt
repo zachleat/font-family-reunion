@@ -32,9 +32,12 @@ http://www.microsoft.com/typography/fonts/product.aspx?PID=145
 http://support.apple.com/kb/HT5878
 
 // Android
+https://github.com/android/platform_frameworks_base/blob/master/data/fonts/fonts.xml
+prior to 4.x: https://github.com/android/platform_frameworks_base/blob/9283f3cd6c45a2810e78428db3b1ecd575a72760/data/fonts/fonts.xml
 https://github.com/android/platform_frameworks_base/tree/master/data/fonts
 http://stackoverflow.com/questions/6809944/default-font-set-on-android
 https://developer.android.com/design/style/typography.html
+API levels: https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels
 
 // Windows Phone (not very many good resources here)
 http://msdn.microsoft.com/en-us/library/ff806365%28v=vs.95%29.aspx
