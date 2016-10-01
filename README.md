@@ -17,6 +17,8 @@
 
 Add your `font-family` name to `test/src/font-families.json`, preferably in alphabetical order.
 
+Use `test/add-fonts.html` to make adding new font families to the list easier.
+
 ### Run the test server and save results to a local database
 
 1. `mongod`

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+	Check the console.
+	<script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+	<script>
+	var newFonts = [
+		
+	];
+	$.ajax({
+		url: "src/font-families.json",
+		dataType: "json"
+	}).done(function( data ) {
+		console.log( "Before: ", data.families.length );
+		var union = _.union( data.families, newFonts );
+		console.log( "After: ", union.length );
+		var unique = _.unique( union );
+		console.log( "Unique: ", unique.length );
+		console.log( JSON.stringify( unique.sort() ) );
+	});
+	</script>
+</body>
+</html>

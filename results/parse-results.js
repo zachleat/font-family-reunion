@@ -202,7 +202,7 @@ for( var familyName in lookupTable ) {
 	});
 }
 
-// Write an empty file for things that exist as an alias only, to avoid the missing error message.
+// Write an empty file for things that exist as an alias only, to avoid the “missing” UI error message.
 for( var osId in aliasOnly ) {
 	if( osId && Object.keys( aliasOnly[ osId ] ).length ) {
 		for( var familyName in aliasOnly[ osId ] ) {
