@@ -207,7 +207,6 @@ for( var osId in aliasOnly ) {
 	if( osId && Object.keys( aliasOnly[ osId ] ).length ) {
 		for( var familyName in aliasOnly[ osId ] ) {
 			if( familyName ) {
-				console.log( "../fontfamily.io/results/aliasonly/" + FFRLookup.createFileName( familyName ) + ".html" );
 				fs.writeFile( "../fontfamily.io/results/aliasonly/" + FFRLookup.createFileName( familyName ) + ".html", "", function( error ) {
 					if( error ) {
 						console.log( 'aliasonly template error: ', error );
