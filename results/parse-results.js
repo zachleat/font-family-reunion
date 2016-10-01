@@ -4,7 +4,8 @@ var ejs = require('ejs'),
 	operatingSystems = {},
 	shortCodes = {},
 	lookupTable = {},
-	friendlyFontFamilyNames = {};
+	friendlyFontFamilyNames = {},
+	aliasOnly = {};
 
 results.families.forEach(function( family, osId ) {
 	operatingSystems[ osId ] = {
@@ -38,6 +39,15 @@ results.families.forEach(function( family, osId ) {
 		}
 	});
 
+	var key;
+	for( var alias in family.aliases ) {
+		key = family.aliases[ alias ].toLowerCase();
+		if( !aliasOnly[ osId ] ) {
+			aliasOnly[ osId ] = {};
+		}
+		aliasOnly[ osId ][ key ] = true;
+	}
+
 	family.families.forEach(function( familyName ) {
 		var normalizedFamilyName = familyName.toLowerCase();
 		friendlyFontFamilyNames[ normalizedFamilyName ] = familyName;
@@ -52,6 +62,10 @@ results.families.forEach(function( family, osId ) {
 			exceptions: family.exceptions ? family.exceptions[ normalizedFamilyName ] : false,
 			fontFamily: familyName
 		};
+
+		if( aliasOnly[ osId ] && aliasOnly[ osId ][ normalizedFamilyName ] ) {
+			delete aliasOnly[ osId ][ normalizedFamilyName ];
+		}
 	});
 });
 
@@ -125,12 +139,14 @@ FFRLookup.prototype.toJSON = function() {
 		arr.push({
 			support: !!( support && !useAlias ),
 			alias: useAlias,
+			aliasOnly: aliasOnly[ osId ],
 			unsupported: !support,
 			fallback: !!( support && support.fallback ),
 			exceptions: support ? support.exceptions : false,
 			shortcode: os.shortcode,
 			name: os.name,
 			version: os.version,
+			normalizedFamilyName: familyName.toLowerCase(),
 			fontFamily: familyName
 		});
 	}
@@ -146,12 +162,15 @@ FFRLookup.prototype.toString = function() {
 	return str.join( "\n" );
 };
 
-// http://code.activestate.com/recipes/577787-slugify-make-a-string-usable-in-a-url-or-filename/
-FFRLookup.prototype.getFileName = function() {
-	var s = this.familyList;
-  s = s.replace( /[^\w\s-]/g, '').trim().toLowerCase();
+FFRLookup.createFileName = function( s ) {
+	s = s.replace( /[^\w\s-]/g, '').trim().toLowerCase();
   s = s.replace( /[-\s]+/g , '-');
   return s;
+};
+
+// http://code.activestate.com/recipes/577787-slugify-make-a-string-usable-in-a-url-or-filename/
+FFRLookup.prototype.getFileName = function() {
+  return FFRLookup.createFileName( this.familyList );
 };
 
 FFRLookup.prototype.getFilePath = function() {
@@ -181,4 +200,20 @@ for( var familyName in lookupTable ) {
 			console.log( 'template error: ', error );
 		}
 	});
+}
+
+// Write an empty file for things that exist as an alias only, to avoid the missing error message.
+for( var osId in aliasOnly ) {
+	if( osId && Object.keys( aliasOnly[ osId ] ).length ) {
+		for( var familyName in aliasOnly[ osId ] ) {
+			if( familyName ) {
+				console.log( "../fontfamily.io/results/aliasonly/" + FFRLookup.createFileName( familyName ) + ".html" );
+				fs.writeFile( "../fontfamily.io/results/aliasonly/" + FFRLookup.createFileName( familyName ) + ".html", "", function( error ) {
+					if( error ) {
+						console.log( 'aliasonly template error: ', error );
+					}
+				});
+			}
+		}
+	}
 }

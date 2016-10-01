@@ -61,8 +61,11 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 
 		foreach( $families as $family ) {
 			$path = "./results/" . toAscii( basename( $family ) ) . ".html";
+			$aliasOnlyPath = "./results/aliasonly/" . toAscii( basename( $family ) ) . ".html";
 			if( file_exists( $path ) ) {
 				$files[] = $path;
+			} else if( file_exists( $aliasOnlyPath ) ) {
+				// do nothing
 			} else if( !empty( $family ) ) {
 				$notfound[] = $family;
 			}
@@ -84,7 +87,7 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 			echo ", ";
 		}
 	}
-	if( $notfoundLength !== 1 ) { 
+	if( $notfoundLength !== 1 ) {
 		echo " are unknown fonts ";
 	} else {
 		echo " is an unknown font ";

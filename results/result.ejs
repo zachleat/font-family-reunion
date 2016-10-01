@@ -34,6 +34,7 @@
 					if( os.fontFamily ) {
 						if( os.exceptions ) { %><span class="has-exceptions"><% }
 						%><%= os.fontFamily %><%
+						if( os.aliasOnly[ os.normalizedFamilyName ] ) { %>***<% }
 						if( os.exceptions ) { %></span><% }
 					}
 
