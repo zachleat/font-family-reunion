@@ -10,7 +10,7 @@ function sanitize( $str ) {
 function toAscii( $str ) {
 	$str = trim( $str );
 	$clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $str);
-	$clean = strtolower(trim($clean, '-'));
+	$clean = strtolower(trim($clean));
 
 	return preg_replace("/[\/_|+ -]+/", '-', $clean);
 }
@@ -62,6 +62,7 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 		foreach( $families as $family ) {
 			$path = "./results/" . toAscii( basename( $family ) ) . ".html";
 			$aliasOnlyPath = "./results/aliasonly/" . toAscii( basename( $family ) ) . ".html";
+
 			if( file_exists( $path ) ) {
 				$files[] = $path;
 			} else if( file_exists( $aliasOnlyPath ) ) {

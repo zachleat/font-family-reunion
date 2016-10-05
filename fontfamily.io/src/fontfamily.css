@@ -331,11 +331,14 @@ p.legend {
 .icon-tux:before {
 	content: "\e600";
 }
+.icon-ios-9-3-iphone:before,
+.icon-ios-8-1-iphone:before,
 .icon-ios-8-0-iphone:before,
 .icon-ios-7-1-iphone:before,
 .icon-ios-7-iphone:before,
 .icon-ios-6-1-iphone:before,
 .icon-ios-6-iphone:before,
+.icon-ios-5-1-iphone:before,
 .icon-apple:before {
 	content: "\e601";
 }
