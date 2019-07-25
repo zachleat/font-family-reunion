@@ -39,6 +39,9 @@ http://stackoverflow.com/questions/6809944/default-font-set-on-android
 https://developer.android.com/design/style/typography.html
 API levels: https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels
 
+// Chrome OS
+https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/refs/heads/master/media-fonts/
+
 // Windows Phone (not very many good resources here)
 http://msdn.microsoft.com/en-us/library/ff806365%28v=vs.95%29.aspx
 
