@@ -1,6 +1,6 @@
 # font-family-reunion
 
-* Hosted at [https://fontfamily.zachleat.dev/](https://fontfamily.zachleat.dev/)
+* Hosted at [https://fontfamily.zachleat.dev/](https://fontfamily.zachleat.dev/) (formerly fontfamily.io)
 
 ## Initializing the repo
 
