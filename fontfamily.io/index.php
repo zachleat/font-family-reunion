@@ -20,8 +20,14 @@ function denormalizeFamily( $str ) {
 	return preg_replace("/_/", ' ', $str);
 }
 
-$families = sanitize( $_GET[ "families" ] );
-$os = sanitize( basename( $_GET[ "os" ] ) );
+$families = "";
+if (isset($_GET['families'])) {
+	$families = sanitize( $_GET[ "families" ] );
+}
+$os = "";
+if (isset($_GET['os'])) {
+	$os = sanitize( basename( $_GET[ "os" ] ) );
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -30,6 +36,8 @@ $os = sanitize( basename( $_GET[ "os" ] ) );
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>fontfamily.io</title>
 	<link rel="stylesheet" href="/src/fontfamily.css">
+	<!-- os: <?php echo $os; ?> -->
+	<!-- families: <?php echo $families; ?> -->
 </head>
 <body>
 	<h1><a href="/">Font Family Reunion</a></h1>
