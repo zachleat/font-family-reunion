@@ -34,7 +34,7 @@ if (isset($_GET['os'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>fontfamily.io</title>
+	<title>Font Family Reunion</title>
 	<link rel="stylesheet" href="/src/fontfamily.css">
 	<!-- os: <?php echo $os; ?> -->
 	<!-- families: <?php echo $families; ?> -->
@@ -50,7 +50,7 @@ if (isset($_GET['os'])) {
 		</div>
 		<p class="note"><strong>Examples</strong>: <a href="/">(none)</a> <a href="/serif">serif</a> <a href="/sans-serif">sans-serif</a> <a href="/fantasy">fantasy</a> <a href="/cursive">cursive</a> <a href="/Andale_Mono,monospace">Andale Mono, monospace</a></p>
 		<p class="note">Per the specification, font-family names are case insensitive. <code>***</code> signifies a <code>font-family</code> that is only available by its aliased name in CSS.</p>
-		<p class="note"><em><a href="https://twitter.com/zachleat"><img src="/img/zachleat.png" alt="Avatar of @zachleat" class="avatar"> @zachleat</a></em> <strong><a href="//www.zachleat.com/web/font-family-reunion/">Read more about fontfamily.io</a></strong></p>
+		<p class="note"><em><a href="https://twitter.com/zachleat"><img src="/img/zachleat.png" alt="Avatar of @zachleat" class="avatar"> @zachleat</a></em> <strong><a href="//www.zachleat.com/web/font-family-reunion/">Read more about Font Family Reunion</a></strong></p>
 
 	</form>
 <?php
@@ -101,7 +101,7 @@ if (isset($_GET['os'])) {
 	} else {
 		echo " is an unknown font ";
 	}
-?> to fontfamily.io. If this is a bug, please <a href="https://github.com/zachleat/font-family-reunion/issues/new">file an issue on GitHub</a>!</p>
+?> to Font Family Reunion. If this is a bug, please <a href="https://github.com/zachleat/font-family-reunion/issues/new">file an issue on GitHub</a>!</p>
 <?php
 	endif;
 ?>

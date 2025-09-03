@@ -1,6 +1,6 @@
 # font-family-reunion
 
-* Hosted at [fontfamily.io](http://fontfamily.io)
+* Hosted at [https://fontfamily.zachleat.dev/](https://fontfamily.zachleat.dev/)
 
 ## Initializing the repo
 
@@ -29,5 +29,5 @@ Use `test/add-fonts.html` to make adding new font families to the list easier.
 
 `grunt generate`
 
-Or more explicitly, `node results/parse-results.js` will generate the fontfamily.io web site from the results stored in `font-families-results.json`. The template is in `results/result.ejs`.
+Or more explicitly, `node results/parse-results.js` will generate the Font Family Reunion web site from the results stored in `font-families-results.json`. The template is in `results/result.ejs`.
 
